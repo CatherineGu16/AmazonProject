@@ -22,6 +22,7 @@ public class Products
 	
 	public static void main(String[] args)
 	{
+		//edit
 		Products firstdog = new Products("Shirt", "A pack of luxurious white shirts", "$20.00");
 		Products seconddog = new Products("Kai", "German Shepherd", "");
 		Products thirddog = new Products("Spots", "Labrador", "");
