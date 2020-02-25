@@ -67,6 +67,17 @@ public class mainUI extends JFrame{
 		btnSearch.setBounds(465, 61, 111, 33);
 		panel.add(btnSearch);
 		
+		JButton btnLogin = new JButton("Login ");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			new loginUI().setVisible(true);
+		
+				
+			}
+		});
+		btnLogin.setBounds(527, 6, 117, 29);
+		panel.add(btnLogin);
+		
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
 		
