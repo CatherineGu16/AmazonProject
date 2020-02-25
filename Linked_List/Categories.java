@@ -52,9 +52,9 @@ public class Categories
 	public void addApparel()
 	{
     	//add Music
-    	Apparel.add(new Music("Map of the Soul: 7", 
+    	Apparel.add(new Apparel("Map of the Soul: 7", 
 				"4 versions, photobook, lyric book, minibook, postcard, sticker, poster", "$25.00"));
-    	System.out.println("BTS: " + BTS_albums);
+    	System.out.println("Apparel: " + Apparel);
     	
 	}
 	
