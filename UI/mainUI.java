@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.Font;
 
-
+//Creates Main UI
 public class mainUI extends JFrame{
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -33,6 +33,7 @@ public class mainUI extends JFrame{
 			}
 		});
 	}
+	//
 	public mainUI() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -69,27 +70,44 @@ public class mainUI extends JFrame{
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
 		
-		JMenuItem mntmBts = new JMenuItem("BTS ");
-		mntmBts.setBackground(Color.WHITE);
-		menuBar_1.add(mntmBts);
+		JMenu mnBts = new JMenu("BTS");
+		menuBar_1.add(mnBts);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Apparel");
-		menuBar_1.add(mntmNewMenuItem);
+		JMenuItem mntmBtsCds = new JMenuItem("BTS CDs");
+		mnBts.add(mntmBtsCds);
 		
-		JMenuItem mntmMusic = new JMenuItem("Music");
-		menuBar_1.add(mntmMusic);
+		JMenu mnApparel = new JMenu("Apparel");
+		menuBar_1.add(mnApparel);
 		
-		JMenuItem mntmToys = new JMenuItem("Toys");
-		menuBar_1.add(mntmToys);
+		JMenuItem mntmShirts = new JMenuItem("Shirts");
+		mnApparel.add(mntmShirts);
 		
-		JMenuItem mntmElectronics = new JMenuItem("Electronics");
-		menuBar_1.add(mntmElectronics);
+		JMenu mnNewMenu = new JMenu("Music");
+		menuBar_1.add(mnNewMenu);
 		
-		JMenuItem mntmNewMenuItem_1 = new JMenuItem("");
-		menuBar_1.add(mntmNewMenuItem_1);
+		JMenuItem mntmSravanisPopMusic = new JMenuItem("Sravani's Pop Music");
+		mnNewMenu.add(mntmSravanisPopMusic);
 		
-		JMenuItem mntmOther = new JMenuItem("Other");
-		menuBar_1.add(mntmOther);
+		JMenuItem mntmPhillipPillipsCds = new JMenuItem("Phillip Pillips CDs");
+		mnNewMenu.add(mntmPhillipPillipsCds);
+		
+		JMenu mnSnacks = new JMenu("Snacks");
+		menuBar_1.add(mnSnacks);
+		
+		JMenuItem mntmGirlScoutCookies = new JMenuItem("Catherine's girl Scout Cookies");
+		mnSnacks.add(mntmGirlScoutCookies);
+		
+		JMenu mnElectronics = new JMenu("Electronics");
+		menuBar_1.add(mnElectronics);
+		
+		JMenuItem mntmCsComputer = new JMenuItem("C.S. Computer");
+		mnElectronics.add(mntmCsComputer);
+		
+		JMenu mnNewMenu_1 = new JMenu("Other");
+		menuBar_1.add(mnNewMenu_1);
+		
+		JMenuItem mntmYolo = new JMenuItem("Yolo");
+		mnNewMenu_1.add(mntmYolo);
 		
 	
 		
