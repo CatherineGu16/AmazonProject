@@ -22,6 +22,7 @@ public class Other
 	
 	public static void main(String[] args)
 	{
+		//
 		//add miscellaneous objects
 		Other popsocket = new Other("Pop socket", 
 				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00");
