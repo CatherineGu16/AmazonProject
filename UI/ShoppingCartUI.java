@@ -18,9 +18,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import java.awt.Font;
-
+import Linked_List.*;
 public class ShoppingCartUI extends JFrame{
-	
+	//
 	private JTextField textField;
 	public ShoppingCartUI() {
 		setBounds(100, 100, 400, 550);

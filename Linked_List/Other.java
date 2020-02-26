@@ -1,5 +1,5 @@
 package Linked_List;
-
+import UI.*;
 public class Other 
 {
 	//make objects
