@@ -103,6 +103,7 @@ public class mainUI extends JFrame{
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
 		
+		//BTS album button
 		JMenuItem mntmBts = new JMenuItem("BTS");
 		mntmBts.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -111,6 +112,7 @@ public class mainUI extends JFrame{
 		});
 		menuBar_1.add(mntmBts);
 		
+		//Music button
 		JMenuItem mntmMusic = new JMenuItem("Music");
 		mntmMusic.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -119,6 +121,7 @@ public class mainUI extends JFrame{
 		});
 		menuBar_1.add(mntmMusic);
 		
+		//Electronic button
 		JMenuItem mntmElectronics = new JMenuItem("Electronics");
 		mntmElectronics.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -127,6 +130,7 @@ public class mainUI extends JFrame{
 		});
 		menuBar_1.add(mntmElectronics);
 		
+		//Apparel button
 		JMenuItem mntmApparel = new JMenuItem("Apparel");
 		mntmApparel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -135,6 +139,7 @@ public class mainUI extends JFrame{
 		});
 		menuBar_1.add(mntmApparel);
 		
+		//Snacks button
 		JMenuItem mntmSnacks = new JMenuItem("Snacks");
 		mntmSnacks.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -143,6 +148,7 @@ public class mainUI extends JFrame{
 		});
 		menuBar_1.add(mntmSnacks);
 		
+		//Other button
 		JMenuItem mntmOther = new JMenuItem("Other");
 		mntmOther.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
