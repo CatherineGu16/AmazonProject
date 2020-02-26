@@ -18,6 +18,8 @@ import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.Font;
+import javax.swing.JScrollPane;
+import javax.swing.JTextPane;
 
 //Creates Main UI
 public class mainUI extends JFrame{
@@ -87,6 +89,16 @@ public class mainUI extends JFrame{
 		});
 		btnCheckout.setBounds(533, 22, 117, 29);
 		panel.add(btnCheckout);
+		
+		JTextPane txtpnYop = new JTextPane();
+		txtpnYop.setText("yop");
+		txtpnYop.setBounds(115, 232, -46, 65);
+		getContentPane().add(txtpnYop);
+		
+		JTextPane txtpnHello = new JTextPane();
+		txtpnHello.setText("HELLO");
+		txtpnHello.setBounds(0, 100, 650, 500);
+		getContentPane().add(txtpnHello);
 		
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
