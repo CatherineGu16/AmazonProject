@@ -91,44 +91,23 @@ public class mainUI extends JFrame{
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
 		
-		JMenu mnBts = new JMenu("BTS");
-		menuBar_1.add(mnBts);
+		JMenuItem mntmBts = new JMenuItem("BTS");
+		menuBar_1.add(mntmBts);
 		
-		JMenuItem mntmBtsCds = new JMenuItem("BTS CDs");
-		mnBts.add(mntmBtsCds);
+		JMenuItem mntmMusic = new JMenuItem("Music");
+		menuBar_1.add(mntmMusic);
 		
-		JMenu mnApparel = new JMenu("Apparel");
-		menuBar_1.add(mnApparel);
+		JMenuItem mntmElectronics = new JMenuItem("Electronics");
+		menuBar_1.add(mntmElectronics);
 		
-		JMenuItem mntmShirts = new JMenuItem("Shirts");
-		mnApparel.add(mntmShirts);
+		JMenuItem mntmApparel = new JMenuItem("Apparel");
+		menuBar_1.add(mntmApparel);
 		
-		JMenu mnNewMenu = new JMenu("Music");
-		menuBar_1.add(mnNewMenu);
+		JMenuItem mntmSnacks = new JMenuItem("Snacks");
+		menuBar_1.add(mntmSnacks);
 		
-		JMenuItem mntmSravanisPopMusic = new JMenuItem("Sravani's Pop Music");
-		mnNewMenu.add(mntmSravanisPopMusic);
-		
-		JMenuItem mntmPhillipPillipsCds = new JMenuItem("Phillip Pillips CDs");
-		mnNewMenu.add(mntmPhillipPillipsCds);
-		
-		JMenu mnSnacks = new JMenu("Snacks");
-		menuBar_1.add(mnSnacks);
-		
-		JMenuItem mntmGirlScoutCookies = new JMenuItem("Catherine's girl Scout Cookies");
-		mnSnacks.add(mntmGirlScoutCookies);
-		
-		JMenu mnElectronics = new JMenu("Electronics");
-		menuBar_1.add(mnElectronics);
-		
-		JMenuItem mntmCsComputer = new JMenuItem("C.S. Computer");
-		mnElectronics.add(mntmCsComputer);
-		
-		JMenu mnNewMenu_1 = new JMenu("Other");
-		menuBar_1.add(mnNewMenu_1);
-		
-		JMenuItem mntmYolo = new JMenuItem("Yolo");
-		mnNewMenu_1.add(mntmYolo);
+		JMenuItem mntmOther = new JMenuItem("Other");
+		menuBar_1.add(mntmOther);
 		
 	
 		
