@@ -52,8 +52,27 @@ public class Categories
 	public void addApparel()
 	{
     	//add Music
-    	Apparel.add(new Apparel("Map of the Soul: 7", 
-				"4 versions, photobook, lyric book, minibook, postcard, sticker, poster", "$25.00"));
+    	Apparel.add(new Apparel("10 pack white T-shirts", 
+				"10 count, white 100% cotton T-shirts, size: L", "$15.00"));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("Parachute pants", 
+				"Gold, parachute pants with elastic wasteband, fits most tetens and adults", "$18.00"));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("Nike Air Zoom Pegasus", 
+				"cooling perforations, breathability across high-heat areas, reduce bulk without compromising comfort, Color: thunder gray", 
+				"$120.00"));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("Balenciaga Platform Crocs", 
+				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00"));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("Under Armour Hoodie", 
+				"maximum comfort, air-jet yarn, 50% cotton 50% polyester", "$34.00"));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("Thigh-high Uggs", 
+				"fashionable, wedge heel, 22'' shaft height, 2' heel height, water repellant", "$300.00"));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("Advanced Stretch Skinny Jeans", 
+				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim, fading contrast stitching", "$25.00"));
     	System.out.println("Apparel: " + Apparel);
     	
 	}
@@ -83,7 +102,7 @@ public class Categories
 	{
 		Categories BTS_albums = new Categories();
 
-		BTS_albums.addproducts();
+		BTS_albums.addBTS();
 		BTS_albums.displayQueue();
 		BTS_albums.removeproducts();
 	}
