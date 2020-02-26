@@ -24,21 +24,22 @@ public class Other
 	{
 		//add miscellaneous objects
 		Other popsocket = new Other("Pop socket", 
-				"", "$8.00");
-		Other iPhoneCase = new Other("iPhone Case", "", "");
-		Other p = new Other("", "", "");
-		Other i = new Other("", "", "");
-		Other g = new Other("", "", "");
-		Other s = new Other("", "", "");
-		Other f = new Other("", "", "");
+				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00");
+		Other iPhoneCase = new Other("Otterbox Symmetry Case", 
+				"synthetic rubber, ultra thin, raised bumper", "$45.00");
+		Other tennisballs = new Other("Penn Pro Tennis Balls", 
+				"longest lasting tennis balls, LongPlay felt", "$80.00");
+		Other pencil = new Other("Papermate Clearpoint Mechanical Pencils", 
+				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00");
+		Other necklace = new Other("Diamond and Blue Sapphire Halo Necklace", 
+				"New 28.9 ctw diamond, gold, and sapphire", "$45950");
+
 
 		System.out.println(popsocket);
 		System.out.println(iPhoneCase);
-		System.out.println(p);
-		System.out.println(i);
-		System.out.println(g);
-		System.out.println(s);
-		System.out.println(f);
+		System.out.println(tennisballs);
+		System.out.println(pencil);
+		System.out.println(necklace);
 	}
 	
 	public static String delete() {

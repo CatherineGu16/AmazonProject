@@ -134,23 +134,24 @@ public class Categories
     	System.out.println("Electronics: " + Electronics);
 	}
 	
-	public void addOthers()
+	public void addOther()
 	{
     	//add Music
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
+    	Other.add(new Other("Pop socket", 
+				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00"));
+    	System.out.println("Other: " + Other);
+    	Other.add(new Other("Otterbox Symmetry Case", 
+				"synthetic rubber, ultra thin, raised bumper", "$45.00"));
+    	System.out.println("Other: " + Other);
+    	Other.add(new Other("Penn Pro Tennis Balls", 
+				"longest lasting tennis balls, LongPlay felt", "$80.00"));
+    	System.out.println("Other: " + Other);
+    	Other.add(new Other("Papermate Clearpoint Mechanical Pencils", 
+				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00"));
+    	System.out.println("Other: " + Other);
+    	Other.add(new Other("Diamond and Blue Sapphire Halo Necklace", 
+				"New 28.9 ctw diamond, gold, and sapphire", "$45950"));
+    	System.out.println("Other: " + Other);
 	}
 	
 	public void removeproducts()
