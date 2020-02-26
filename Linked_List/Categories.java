@@ -77,6 +77,81 @@ public class Categories
     	
 	}
 	
+	public void addMusic()
+	{
+    	//add Music
+    	Music.add(new Music("\"Circles\" by Post Malone", "Time: 3:35", "$1.29"));
+    	System.out.println("Music: " + Music);
+    	Music.add(new Music("\"Chills\" by Why Don't We", "Time: 2:45", "$1.29"));
+    	System.out.println("Music: " + Music);
+    	Music.add(new Music("\"When the Party's Over\" by Billie Eilish", "Time: 3:16", "$1.29"));
+    	System.out.println("Music: " + Music);
+    	Music.add(new Music("\"What Makes You Beautiful\" by One Direction", "Time: 3:19", "$1.29"));
+    	System.out.println("Music: " + Music);
+    	Music.add(new Music("\"Love Story\" by Taylor Swift", "Time: 3:55", "$1.29"));
+    	System.out.println("Music: " + Music);
+    	Music.add(new Music("\"Thank you, next\" by Ariana Grande", "Time: 3:27", "$1.29"));
+    	System.out.println("Music: " + Music);
+    	Music.add(new Music("\"Memories\" by Maroon 5", "Time: 3:09", "$1.29"));
+    	System.out.println("Music: " + Music);
+	}
+	
+	public void addElectronics()
+	{
+    	//add Music
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+	}
+	
+	public void addSnacks()
+	{
+    	//add Music
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+	}
+	
+	public void addOthers()
+	{
+    	//add Music
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+    	Apparel.add(new Apparel("", "", ""));
+    	System.out.println("Apparel: " + Apparel);
+	}
 	
 	public void removeproducts()
 	  {

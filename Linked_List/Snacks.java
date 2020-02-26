@@ -32,7 +32,7 @@ public class Snacks
 		Snacks s = new Snacks("", "", "");
 		Snacks f = new Snacks("", "", "");
 
-		System.out.println(snacks);
+		System.out.println(chips);
 		System.out.println(cookies);
 		System.out.println(hotcheetos);
 		System.out.println(i);

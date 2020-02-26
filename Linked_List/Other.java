@@ -25,15 +25,15 @@ public class Other
 		//add miscellaneous objects
 		Other popsocket = new Other("Pop socket", 
 				"", "$8.00");
-		Other iPhonecase = new Other("iPhone Case", "", "");
+		Other iPhoneCase = new Other("iPhone Case", "", "");
 		Other p = new Other("", "", "");
 		Other i = new Other("", "", "");
 		Other g = new Other("", "", "");
 		Other s = new Other("", "", "");
 		Other f = new Other("", "", "");
 
-		System.out.println(Tshirt);
-		System.out.println(ParachutePants);
+		System.out.println(popsocket);
+		System.out.println(iPhoneCase);
 		System.out.println(p);
 		System.out.println(i);
 		System.out.println(g);
