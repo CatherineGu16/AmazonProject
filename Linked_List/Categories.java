@@ -74,7 +74,6 @@ public class Categories
     	Apparel.add(new Apparel("Advanced Stretch Skinny Jeans", 
 				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim, fading contrast stitching", "$25.00"));
     	System.out.println("Apparel: " + Apparel);
-    	
 	}
 	
 	public void addMusic()
@@ -99,20 +98,20 @@ public class Categories
 	public void addElectronics()
 	{
     	//add Music
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
+    	Electronics.add(new Electronics("Dell-Inspiron 15.6''", "Touchscreen, Intel Core i5, 8GB Memory, color: black", "$500.00"));
+    	System.out.println("Electronics: " + Electronics);
+    	Electronics.add(new Electronics("13-inch Macbook Pro", "1.4GHz Quad-Core Processor, touchbar, touch ID, 256 GB", "$1499.00"));
+    	System.out.println("Electronics: " + Electronics);
+    	Electronics.add(new Electronics("iPhone 11 Pro Max", "Triple-camera system, 256 GB, Color: Space Gray", "$1249.00"));
+    	System.out.println("Electronics: " + Electronics);
+    	Electronics.add(new Electronics("12.9 inch iPad Pro", 
+				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00"));
+    	System.out.println("Electronics: " + Electronics);
+    	Electronics.add(new Electronics("50-inch Samsung Smart 4K Ultra HD TV", "2 HDMI ports, Pur Color, connect & share", "$300.00"));
+    	System.out.println("Electronics: " + Electronics);
+    	Electronics.add(new Electronics("Apple Watch Series 5", 
+				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00"));
+    	System.out.println("Electronics: " + Electronics);
 	}
 	
 	public void addSnacks()
