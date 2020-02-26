@@ -104,21 +104,51 @@ public class mainUI extends JFrame{
 		setJMenuBar(menuBar_1);
 		
 		JMenuItem mntmBts = new JMenuItem("BTS");
+		mntmBts.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				BTS_Albums.main(null);
+			}
+		});
 		menuBar_1.add(mntmBts);
 		
 		JMenuItem mntmMusic = new JMenuItem("Music");
+		mntmMusic.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Music.main(null);
+			}
+		});
 		menuBar_1.add(mntmMusic);
 		
 		JMenuItem mntmElectronics = new JMenuItem("Electronics");
+		mntmElectronics.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Electronics.main(null);
+			}
+		});
 		menuBar_1.add(mntmElectronics);
 		
 		JMenuItem mntmApparel = new JMenuItem("Apparel");
+		mntmApparel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Apparel.main(null);
+			}
+		});
 		menuBar_1.add(mntmApparel);
 		
 		JMenuItem mntmSnacks = new JMenuItem("Snacks");
+		mntmSnacks.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Snacks.main(null);
+			}
+		});
 		menuBar_1.add(mntmSnacks);
 		
 		JMenuItem mntmOther = new JMenuItem("Other");
+		mntmOther.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Other.main(null);
+			}
+		});
 		menuBar_1.add(mntmOther);
 		
 	
