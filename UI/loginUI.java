@@ -20,11 +20,13 @@ import javax.swing.JTextField;
 import Login.*;
 
 import java.awt.Font;
+import javax.swing.JPasswordField;
+import javax.swing.SwingConstants;
 
 public class loginUI extends JFrame{
 	private JTextField txtLogin;
-	private JTextField Password;
 	private JTextField Username;
+	private JPasswordField Password;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -72,11 +74,6 @@ public class loginUI extends JFrame{
 		lblPassword.setBounds(18, 266, 159, 40);
 		getContentPane().add(lblPassword);
 		
-		Password = new JTextField();
-		Password.setBounds(189, 272, 406, 40);
-		getContentPane().add(Password);
-		Password.setColumns(10);
-		
 		Username = new JTextField();
 		Username.setColumns(10);
 		Username.setBounds(189, 161, 406, 40);
@@ -91,6 +88,11 @@ public class loginUI extends JFrame{
 		Enter.setFont(new Font("Lucida Grande", Font.PLAIN, 30));
 		Enter.setBounds(331, 389, 240, 79);
 		getContentPane().add(Enter);
+		
+		Password = new JPasswordField();
+		Password.setHorizontalAlignment(SwingConstants.LEFT);
+		Password.setBounds(189, 272, 406, 40);
+		getContentPane().add(Password);
 		
 	}	
 }
