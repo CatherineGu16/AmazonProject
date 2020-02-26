@@ -22,23 +22,22 @@ public class Music
 	
 	public static void main(String[] args)
 	{
-		//add BTS albums
-		Apparel Tshirt = new Apparel("10 pack white T-shirts", 
-				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
-		Apparel ParachutePants = new Apparel("", "", "");
-		Apparel p = new Apparel("", "", "");
-		Apparel i = new Apparel("", "", "");
-		Apparel g = new Apparel("", "", "");
-		Apparel s = new Apparel("", "", "");
-		Apparel f = new Apparel("", "", "");
+		//add music
+		Music Circles = new Music("\"Circles\" by Post Malone", "Time: 3:35", "$1.29");
+		Music Chills = new Music("\"Chills\" by Why Don't We", "Time: 2:45", "$1.29");
+		Music Partyover = new Music("\"When the Party's Over\" by Billie Eilish", "Time: 3:16", "$1.29");
+		Music Beautiful = new Music("\"What Makes You Beautiful\" by One Direction", "Time: 3:19", "$1.29");
+		Music Lovestory = new Music("\"Love Story\" by Taylor Swift", "Time: 3:55", "$1.29");
+		Music Thankyounext = new Music("\"Thank you, next\" by Ariana Grande", "Time: 3:27", "$1.29");
+		Music Memories = new Music("\"Memories\" by Maroon 5", "Time: 3:09", "$1.29");
 
-		System.out.println(Tshirt);
-		System.out.println(ParachutePants);
-		System.out.println(p);
-		System.out.println(i);
-		System.out.println(g);
-		System.out.println(s);
-		System.out.println(f);
+		System.out.println(Circles);
+		System.out.println(Chills);
+		System.out.println(Partyover);
+		System.out.println(Beautiful);
+		System.out.println(Lovestory);
+		System.out.println(Thankyounext);
+		System.out.println(Memories);
 	}
 	
 	public static String delete() {

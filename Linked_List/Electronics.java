@@ -22,18 +22,18 @@ public class Electronics
 	
 	public static void main(String[] args)
 	{
-		//add BTS albums
-		Apparel Tshirt = new Apparel("10 pack white T-shirts", 
-				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
-		Apparel ParachutePants = new Apparel("", "", "");
-		Apparel p = new Apparel("", "", "");
-		Apparel i = new Apparel("", "", "");
-		Apparel g = new Apparel("", "", "");
-		Apparel s = new Apparel("", "", "");
-		Apparel f = new Apparel("", "", "");
+		//add electronics
+		Electronics dell = new Electronics("Dell", 
+				"fastest laptop", "$999.99");
+		Electronics macbook = new Electronics("", "", "");
+		Electronics p = new Electronics("", "", "");
+		Electronics i = new Electronics("", "", "");
+		Electronics g = new Electronics("", "", "");
+		Electronics s = new Electronics("", "", "");
+		Electronics f = new Electronics("", "", "");
 
-		System.out.println(Tshirt);
-		System.out.println(ParachutePants);
+		System.out.println(dell);
+		System.out.println(macbook);
 		System.out.println(p);
 		System.out.println(i);
 		System.out.println(g);

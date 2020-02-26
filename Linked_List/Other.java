@@ -22,15 +22,15 @@ public class Other
 	
 	public static void main(String[] args)
 	{
-		//add BTS albums
-		Apparel Tshirt = new Apparel("10 pack white T-shirts", 
-				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
-		Apparel ParachutePants = new Apparel("", "", "");
-		Apparel p = new Apparel("", "", "");
-		Apparel i = new Apparel("", "", "");
-		Apparel g = new Apparel("", "", "");
-		Apparel s = new Apparel("", "", "");
-		Apparel f = new Apparel("", "", "");
+		//add miscellaneous objects
+		Other popsocket = new Other("Pop socket", 
+				"", "$8.00");
+		Other iPhonecase = new Other("iPhone Case", "", "");
+		Other p = new Other("", "", "");
+		Other i = new Other("", "", "");
+		Other g = new Other("", "", "");
+		Other s = new Other("", "", "");
+		Other f = new Other("", "", "");
 
 		System.out.println(Tshirt);
 		System.out.println(ParachutePants);

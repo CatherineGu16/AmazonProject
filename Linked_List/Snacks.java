@@ -22,19 +22,19 @@ public class Snacks
 	
 	public static void main(String[] args)
 	{
-		//add BTS albums
-		Apparel Tshirt = new Apparel("10 pack white T-shirts", 
+		//add snacks
+		Snacks chips = new Snacks("Catherine's chips", 
 				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
-		Apparel ParachutePants = new Apparel("", "", "");
-		Apparel p = new Apparel("", "", "");
-		Apparel i = new Apparel("", "", "");
-		Apparel g = new Apparel("", "", "");
-		Apparel s = new Apparel("", "", "");
-		Apparel f = new Apparel("", "", "");
+		Snacks cookies = new Snacks("", "", "");
+		Snacks hotcheetos = new Snacks("", "", "");
+		Snacks i = new Snacks("", "", "");
+		Snacks g = new Snacks("", "", "");
+		Snacks s = new Snacks("", "", "");
+		Snacks f = new Snacks("", "", "");
 
-		System.out.println(Tshirt);
-		System.out.println(ParachutePants);
-		System.out.println(p);
+		System.out.println(snacks);
+		System.out.println(cookies);
+		System.out.println(hotcheetos);
 		System.out.println(i);
 		System.out.println(g);
 		System.out.println(s);

@@ -22,7 +22,7 @@ public class Apparel
 	
 	public static void main(String[] args)
 	{
-		//add BTS albums
+		//add apparel
 		Apparel Tshirt = new Apparel("10 pack white T-shirts", 
 				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
 		Apparel ParachutePants = new Apparel("Parachute pants", 
