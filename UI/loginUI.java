@@ -41,7 +41,7 @@ public class loginUI extends JFrame{
 	//
 	public loginUI() {
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
 		setBounds(100, 100, 650, 563);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
@@ -85,7 +85,7 @@ public class loginUI extends JFrame{
 		JButton Enter = new JButton("Enter");
 		Enter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				login.main(Username.getText(), Password.getText());
+			
 			}
 		});
 		Enter.setFont(new Font("Lucida Grande", Font.PLAIN, 30));

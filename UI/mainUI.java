@@ -63,6 +63,7 @@ public class mainUI extends JFrame{
 		textField.setColumns(10);
 		
 		JButton btnSearch = new JButton("Search");
+		btnSearch.setFont(new Font("Lucida Grande", Font.BOLD | Font.ITALIC, 13));
 		btnSearch.setBackground(Color.YELLOW);
 		btnSearch.setBounds(465, 61, 111, 33);
 		panel.add(btnSearch);
@@ -75,8 +76,17 @@ public class mainUI extends JFrame{
 				
 			}
 		});
-		btnLogin.setBounds(527, 6, 117, 29);
+		btnLogin.setBounds(533, 0, 117, 29);
 		panel.add(btnLogin);
+		
+		JButton btnCheckout = new JButton("Checkout");
+		btnCheckout.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new ShoppingCartUI().setVisible(true);
+			}
+		});
+		btnCheckout.setBounds(533, 22, 117, 29);
+		panel.add(btnCheckout);
 		
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
