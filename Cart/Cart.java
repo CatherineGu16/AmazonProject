@@ -34,9 +34,6 @@ public class Cart implements Cloneable {
 		}
 
 
-	// The equals method does something a little dirty here, it only
-	// compares the item names and item costs. Technically, this is
-	// not the way that equals was intended to work.
 
 		public boolean equals(Object other)
 		{
