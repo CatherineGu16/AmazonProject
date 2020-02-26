@@ -95,6 +95,26 @@ public class Categories
     	System.out.println("Music: " + Music);
 	}
 	
+	public void addSnacks()
+	{
+    	//add Music
+    	Snacks.add(new Snacks("Catherine's chips", "Bestest chips ever, sponsored by Sravani", "$5.00"));
+    	System.out.println("Snacks: " + Snacks);
+    	Snacks.add(new Snacks("Chocolate chip cookies", "Pack of 20 cookies", "$6.00"));
+    	System.out.println("Snacks: " + Snacks);
+    	Snacks.add(new Snacks("Flamin' Hot Cheetos", "Made with real cheese", "$3.00"));
+    	System.out.println("Snacks: " + Snacks);
+    	Snacks.add(new Snacks("Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88"));
+    	System.out.println("Snacks: " + Snacks);
+    	Snacks.add(new Snacks("Haribo Gummy Bears", "5 lb, approximately 985 pieces, America's #1 selling gummy bear", "$12.79"));
+    	System.out.println("Snacks: " + Snacks);
+    	Snacks.add(new Snacks("Pepperidge Farm Xtra Cheddar Goldfish", 
+				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64"));
+    	System.out.println("Snacks: " + Snacks);
+    	Snacks.add(new Snacks("Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52"));
+    	System.out.println("Snacks: " + Snacks);
+	}
+	
 	public void addElectronics()
 	{
     	//add Music
@@ -112,25 +132,6 @@ public class Categories
     	Electronics.add(new Electronics("Apple Watch Series 5", 
 				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00"));
     	System.out.println("Electronics: " + Electronics);
-	}
-	
-	public void addSnacks()
-	{
-    	//add Music
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("", "", ""));
-    	System.out.println("Apparel: " + Apparel);
 	}
 	
 	public void addOthers()

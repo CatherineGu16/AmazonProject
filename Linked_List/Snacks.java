@@ -23,22 +23,22 @@ public class Snacks
 	public static void main(String[] args)
 	{
 		//add snacks
-		Snacks chips = new Snacks("Catherine's chips", 
-				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
-		Snacks cookies = new Snacks("", "", "");
-		Snacks hotcheetos = new Snacks("", "", "");
-		Snacks i = new Snacks("", "", "");
-		Snacks g = new Snacks("", "", "");
-		Snacks s = new Snacks("", "", "");
-		Snacks f = new Snacks("", "", "");
+		Snacks chips = new Snacks("Catherine's chips", "Bestest chips ever, sponsored by Sravani", "$5.00");
+		Snacks cookies = new Snacks("Chocolate chip cookies", "Pack of 20 cookies", "$6.00");
+		Snacks hotcheetos = new Snacks("Flamin' Hot Cheetos", "Made with real cheese", "$3.00");
+		Snacks popcorn = new Snacks("Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88");
+		Snacks gummybears = new Snacks("Haribo Gummy Bears", "5 lb, approximately 985 pieces, America's #1 selling gummy bear", "$12.79");
+		Snacks goldfish = new Snacks("Pepperidge Farm Xtra Cheddar Goldfish", 
+				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64");
+		Snacks bar = new Snacks("Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52");
 
 		System.out.println(chips);
 		System.out.println(cookies);
 		System.out.println(hotcheetos);
-		System.out.println(i);
-		System.out.println(g);
-		System.out.println(s);
-		System.out.println(f);
+		System.out.println(popcorn);
+		System.out.println(gummybears);
+		System.out.println(goldfish);
+		System.out.println(bar);
 	}
 	
 	public static String delete() {
