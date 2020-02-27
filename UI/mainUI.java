@@ -25,12 +25,21 @@ import javax.swing.JScrollBar;
 //Creates Main UI
 public class mainUI extends JFrame{
 	
+	public String User;
+	public static JTextField Usernames = new JTextField();
 	
+	public int main;
+	private JTextField txtCasInspired;
+	private JTextField textField;
+	private JTextField ItemCode;
+	private JTextField Quantity;
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					mainUI frame = new mainUI();
+					frame.createLayout();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,9 +48,7 @@ public class mainUI extends JFrame{
 		});
 	}
 	
-
-	//
-	public mainUI() {
+	public void createLayout() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 647);
@@ -78,7 +85,6 @@ public class mainUI extends JFrame{
 		btnSearch.setBounds(465, 61, 111, 33);
 		panel.add(btnSearch);
 		
-		JTextField Usernames = new JTextField();
 		Usernames.setText("Guest");
 		Usernames.setBounds(532, 11, 96, 20);
 		panel.add(Usernames);
@@ -227,14 +233,14 @@ public class mainUI extends JFrame{
 		
 	
 	
+	}
+	
+	//
+	public mainUI() {
+	
 		
 	}
-	public int main;
-	private JTextField txtCasInspired;
-	private JTextField textField;
-	private JTextField ItemCode;
-	private JTextField Quantity;
-	private JTextField Usernames;
+
 	
 
 }

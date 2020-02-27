@@ -23,7 +23,7 @@ import java.awt.Font;
 import javax.swing.JPasswordField;
 import javax.swing.SwingConstants;
 import Linked_List.*;
-public class loginUI extends JFrame{
+public class loginUI extends mainUI{
 	private JTextField txtLogin;
 	private JTextField Username;
 	private JPasswordField Password;
@@ -95,10 +95,12 @@ public class loginUI extends JFrame{
 				String uname=Username.getText();
 				String pswd=Password.getText();
 				
-				if(uname.equals("JMort") && pswd.equals("Motor_Bike_King!"))
+				if(uname.equals("JMort") && pswd.equals("1234"))
 				{
 					
 				User1.setText("John Mortensen"); 
+				Usernames.setText("John Mortensen");
+			
 				
 				System.out.println("John Mortensen");
 				}
