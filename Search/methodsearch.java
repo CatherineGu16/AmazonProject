@@ -2,6 +2,8 @@ package Search;
 
 import java.util.ArrayList;
 
+import Linked_List.CircleQueue;
+
 public class methodsearch {
 	private  boolean Found;
 	private  ArrayList<String> Lines;   	//Each element of ArrayList contains a line from file
@@ -10,12 +12,19 @@ public class methodsearch {
 	private  String SearchTerm;
 	private  String Log;
 	
-	public methodsearch()
+	public methodsearch(ArrayList<CircleQueue> data)
     {
     	Found = true;
     	Lines = new ArrayList<String>();
         Methods = new ArrayList<String>();
         Log = "";
+        
+        
     }
+
+	public static void main(Object object) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

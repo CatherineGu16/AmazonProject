@@ -12,6 +12,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
@@ -21,7 +22,7 @@ import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.JScrollBar;
-
+import Search.*;
 //Creates Main UI
 public class mainUI extends JFrame{
 	
@@ -82,6 +83,8 @@ public class mainUI extends JFrame{
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String Search = btnSearch.getText();
+				methodsearch.main(null);
 			}
 		});
 		btnSearch.setFont(new Font("Lucida Grande", Font.BOLD | Font.ITALIC, 13));
@@ -90,7 +93,8 @@ public class mainUI extends JFrame{
 		panel.add(btnSearch);
 		
 		Usernames.setText("Guest");
-		Usernames.setBounds(532, 11, 96, 20);
+		Usernames.setBounds(510, 11, 120, 20);
+		Usernames.setEditable(false);
 		panel.add(Usernames);
 		Usernames.setColumns(10);
 		
@@ -113,7 +117,7 @@ public class mainUI extends JFrame{
 		MainTextBox.setEditable(false);
 		scrollPane.setViewportView(MainTextBox);
 		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
-		MainTextBox.setText("HELLO");
+		MainTextBox.setText("Welcome to C.A.S. Inspired! ");
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.YELLOW);
@@ -130,7 +134,8 @@ public class mainUI extends JFrame{
 		panel_1.add(scrollPane_1);
 		
 		JTextPane CartList = new JTextPane();
-		CartList.setText("hello");
+		CartList.setText("Your Cart is Empty");
+		CartList.setEditable(false);
 		scrollPane_1.setViewportView(CartList);
 		
 		ItemCode = new JTextField();
@@ -175,7 +180,15 @@ public class mainUI extends JFrame{
 		});
 		
 		
-	
+		JButton addToCart = new JButton("Add to Cart");
+		addToCart.setBounds(10, 170, 135, 15);
+		panel_1.add(addToCart);
+	    addToCart.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+		
+				
+			}
+		});
 		
 		
 		JMenuBar menuBar_1 = new JMenuBar();

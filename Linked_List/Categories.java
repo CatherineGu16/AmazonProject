@@ -15,7 +15,18 @@ public class Categories
 	private CircleQueue Electronics;
 	private CircleQueue Other;
 	private int size = 5;	
-
+    
+	public ArrayList<CircleQueue> GetData(){
+	  ArrayList<CircleQueue> array = new ArrayList<CircleQueue>();
+	  array.add(BTS_albums);
+	  array.add(Apparel);
+	  array.add(Music);
+	  array.add(Snacks);
+	  array.add(Electronics);
+	  array.add(Other);
+		return array;
+	}	
+	
 	public Categories()
 	{
 		  BTS_albums = new CircleQueue();
@@ -51,29 +62,21 @@ public class Categories
 	
 	public void addApparel()
 	{
-    	//add Music
-    	Apparel.add(new Apparel("10 pack white T-shirts", 
-				"10 count, white 100% cotton T-shirts, size: L", "$15.00"));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("Parachute pants", 
-				"Gold, parachute pants with elastic wasteband, fits most tetens and adults", "$18.00"));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("Nike Air Zoom Pegasus", 
+		Apparel Tshirt = new Apparel("001","10 pack white T-shirts", 
+				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
+		Apparel ParachutePants = new Apparel("002","Parachute pants", 
+				"Gold, parachute pants with elastic wasteband, fits most tetens and adults", "$18.00");
+		Apparel Nike = new Apparel("003","Nike Air Zoom Pegasus", 
 				"cooling perforations, breathability across high-heat areas, reduce bulk without compromising comfort, Color: thunder gray", 
-				"$120.00"));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("Balenciaga Platform Crocs", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00"));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("Under Armour Hoodie", 
-				"maximum comfort, air-jet yarn, 50% cotton 50% polyester", "$34.00"));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("Thigh-high Uggs", 
-				"fashionable, wedge heel, 22'' shaft height, 2' heel height, water repellant", "$300.00"));
-    	System.out.println("Apparel: " + Apparel);
-    	Apparel.add(new Apparel("Advanced Stretch Skinny Jeans", 
-				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim, fading contrast stitching", "$25.00"));
-    	System.out.println("Apparel: " + Apparel);
+				"$120.00");
+		Apparel Crocs = new Apparel("004","Balenciaga Platform Crocs", 
+				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+		Apparel Hoodie = new Apparel("005","Under Armour Hoodie", 
+				"maximum comfort, air-jet yarn, 50% cotton 50% polyester", "$34.00");
+		Apparel Uggs = new Apparel("006","Thigh-high Uggs", 
+				"fashionable, wedge heel, 22'' shaft height, 2' heel height, water repellant", "$300.00");
+		Apparel Jeans = new Apparel("007","Advanced Stretch Skinny Jeans", 
+				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim, fading contrast stitching", "$25.00");
 	}
 	
 	public void addMusic()
