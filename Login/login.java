@@ -3,6 +3,10 @@ package Login;
 
 import java.util.Scanner;
 
+
+import javax.swing.JTextField;
+import java.util.*;
+
 import UI.*;
 
 
@@ -14,8 +18,8 @@ public class login
 		//set up scanner
 		Scanner input = new Scanner(System.in);
 		
-		String username = "CAS123";
-		String password = "CAS";
+		String username = "JMort";
+		String password = "Motor_Bike_King!";
 		String userinput = "";
 		String passinput = "";
         
@@ -31,4 +35,6 @@ public class login
 		}
 		
 	}
+
+
 }

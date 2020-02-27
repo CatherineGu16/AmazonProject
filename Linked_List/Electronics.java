@@ -17,7 +17,7 @@ public class Electronics
 	public String toString() 
 	{
 		//toString
-		return (name + " " + description + " " + price);
+		return (name + "\n" + description + "\nPrice: " + price);
 	}
 	
 	public static String main(String[] args)
