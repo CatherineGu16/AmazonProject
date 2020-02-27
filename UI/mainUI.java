@@ -73,6 +73,10 @@ public class mainUI extends JFrame{
 		textField.setColumns(10);
 		
 		JButton btnSearch = new JButton("Search");
+		btnSearch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnSearch.setFont(new Font("Lucida Grande", Font.BOLD | Font.ITALIC, 13));
 		btnSearch.setBackground(Color.YELLOW);
 		btnSearch.setBounds(465, 61, 111, 33);
