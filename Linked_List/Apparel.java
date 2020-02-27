@@ -17,7 +17,7 @@ public class Apparel
 	public String toString() 
 	{
 		//toString
-		return (name + " " + description + " " + price);
+		return (name + "\n" + description + "\n" + price);
 	}
 	
 	public static String main(String[] args)

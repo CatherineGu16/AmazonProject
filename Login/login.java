@@ -14,8 +14,8 @@ public class login
 		//set up scanner
 		Scanner input = new Scanner(System.in);
 		
-		String username = "CAS123";
-		String password = "CAS";
+		String username = "JMort";
+		String password = "Motor_Bike_King!";
 		String userinput = "";
 		String passinput = "";
         
