@@ -20,7 +20,7 @@ public class Music
 		return (name + " " + description + " " + price);
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		//add music
 		Music Circles = new Music("\"Circles\" by Post Malone", "Time: 3:35", "$1.29");
@@ -38,6 +38,8 @@ public class Music
 		System.out.println(Lovestory);
 		System.out.println(Thankyounext);
 		System.out.println(Memories);
+		
+		return Circles.toString() +"\n\n"+ Chills +"\n\n" + Partyover +"\n\n" + Beautiful +"\n\n" + Lovestory +"\n\n" + Thankyounext +"\n\n" + Memories;
 	}
 	
 	public static String delete() {

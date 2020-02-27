@@ -20,7 +20,7 @@ public class Other
 		return (name + " " + description + " " + price);
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		//add miscellaneous objects
 		Other popsocket = new Other("Pop socket", 
@@ -40,6 +40,8 @@ public class Other
 		System.out.println(tennisballs);
 		System.out.println(pencil);
 		System.out.println(necklace);
+		
+		return popsocket.toString() +"\n\n"+ iPhoneCase +"\n\n" + tennisballs +"\n\n" + pencil +"\n\n" + necklace;
 	}
 	
 	public static String delete() {

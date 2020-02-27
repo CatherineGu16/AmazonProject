@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import Login.*;
-
+import UI.*;
 import java.awt.Font;
 import javax.swing.JPasswordField;
 import javax.swing.SwingConstants;
@@ -27,6 +27,7 @@ public class loginUI extends JFrame{
 	private JTextField txtLogin;
 	private JTextField Username;
 	private JPasswordField Password;
+	private JTextField User1;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -41,6 +42,7 @@ public class loginUI extends JFrame{
 	}
 	//
 	//
+	
 	public loginUI() {
 		
 	
@@ -64,6 +66,14 @@ public class loginUI extends JFrame{
 		panel.add(txtLogin);
 		txtLogin.setColumns(10);
 		
+		JTextField User1 = new JTextField();
+		User1.setText("Guest");
+		User1.setForeground(new Color(255, 255, 255));
+		User1.setBackground(new Color(30, 144, 255));
+		User1.setBounds(532, 6, 96, 20);
+		panel.add(User1);
+		User1.setColumns(10);
+		
 		JLabel lblUsername = new JLabel("Username:");
 		lblUsername.setFont(new Font("Lucida Grande", Font.PLAIN, 30));
 		lblUsername.setBounds(18, 155, 159, 40);
@@ -82,7 +92,20 @@ public class loginUI extends JFrame{
 		JButton Enter = new JButton("Enter");
 		Enter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			
+				String uname=Username.getText();
+				String pswd=Password.getText();
+				
+				if(uname.equals("JMort") && pswd.equals("Motor_Bike_King!"))
+				{
+					
+				User1.setText("John Mortensen"); 
+				
+				System.out.println("John Mortensen");
+				}
+				else 
+				{
+			    System.out.println("Error"); 
+				}
 			}
 		});
 		Enter.setFont(new Font("Lucida Grande", Font.PLAIN, 30));
@@ -94,5 +117,8 @@ public class loginUI extends JFrame{
 		Password.setBounds(189, 272, 406, 40);
 		getContentPane().add(Password);
 		
+		
+		
+	
 	}	
 }

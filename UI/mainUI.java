@@ -20,9 +20,12 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
+import javax.swing.JScrollBar;
 
 //Creates Main UI
 public class mainUI extends JFrame{
+	
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -35,19 +38,24 @@ public class mainUI extends JFrame{
 			}
 		});
 	}
+	
+
 	//
 	public mainUI() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 650, 650);
+		setBounds(100, 100, 800, 647);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(30, 144, 255));
-		panel.setBounds(0, 0, 650, 100);
+		panel.setBounds(0, 0, 638, 100);
 		getContentPane().add(panel);
 		panel.setLayout(null);
+		
+	
+		
 		
 		txtCasInspired = new JTextField();
 		txtCasInspired.setEditable(false);
@@ -70,7 +78,79 @@ public class mainUI extends JFrame{
 		btnSearch.setBounds(465, 61, 111, 33);
 		panel.add(btnSearch);
 		
+		JTextField Usernames = new JTextField();
+		Usernames.setText("Guest");
+		Usernames.setBounds(532, 11, 96, 20);
+		panel.add(Usernames);
+		Usernames.setColumns(10);
+		
+		
+		
+		
+		JTextPane txtpnYop = new JTextPane();
+		txtpnYop.setText("yop");
+		txtpnYop.setBounds(115, 232, -46, 65);
+		getContentPane().add(txtpnYop);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(0, 100, 638, 487);
+		getContentPane().add(scrollPane);
+		
+		
+				
+		
+		JTextPane MainTextBox = new JTextPane();
+		MainTextBox.setEditable(false);
+		scrollPane.setViewportView(MainTextBox);
+		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
+		MainTextBox.setText("HELLO");
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.YELLOW);
+		panel_1.setBounds(635, 0, 153, 587);
+		getContentPane().add(panel_1);
+		panel_1.setLayout(null);
+		
+		JButton btnCheckout = new JButton("Checkout");
+		btnCheckout.setBounds(10, 523, 133, 23);
+		panel_1.add(btnCheckout);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(10, 215, 133, 297);
+		panel_1.add(scrollPane_1);
+		
+		JTextPane CartList = new JTextPane();
+		CartList.setText("hello");
+		scrollPane_1.setViewportView(CartList);
+		
+		ItemCode = new JTextField();
+		ItemCode.setBounds(10, 95, 96, 20);
+		panel_1.add(ItemCode);
+		ItemCode.setColumns(10);
+		
+		Quantity = new JTextField();
+		Quantity.setColumns(10);
+		Quantity.setBounds(10, 148, 96, 20);
+		panel_1.add(Quantity);
+		
 		JButton btnLogin = new JButton("Login ");
+		btnLogin.setBounds(54, 0, 89, 20);
+		panel_1.add(btnLogin);
+		
+		JLabel lblNewLabel = new JLabel("Item #");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel.setBounds(10, 70, 96, 20);
+		panel_1.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Quantity");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_1.setBounds(10, 116, 77, 30);
+		panel_1.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Cart");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 25));
+		lblNewLabel_2.setBounds(10, 190, 63, 23);
+		panel_1.add(lblNewLabel_2);
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			new loginUI().setVisible(true);
@@ -78,27 +158,15 @@ public class mainUI extends JFrame{
 				
 			}
 		});
-		btnLogin.setBounds(533, 0, 117, 29);
-		panel.add(btnLogin);
-		
-		JButton btnCheckout = new JButton("Checkout");
 		btnCheckout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new ShoppingCartUI().setVisible(true);
 			}
 		});
-		btnCheckout.setBounds(533, 22, 117, 29);
-		panel.add(btnCheckout);
 		
-		JTextPane txtpnYop = new JTextPane();
-		txtpnYop.setText("yop");
-		txtpnYop.setBounds(115, 232, -46, 65);
-		getContentPane().add(txtpnYop);
 		
-		JTextPane txtpnHello = new JTextPane();
-		txtpnHello.setText("HELLO");
-		txtpnHello.setBounds(0, 100, 650, 500);
-		getContentPane().add(txtpnHello);
+	
+		
 		
 		JMenuBar menuBar_1 = new JMenuBar();
 		setJMenuBar(menuBar_1);
@@ -106,7 +174,7 @@ public class mainUI extends JFrame{
 		JMenuItem mntmBts = new JMenuItem("BTS");
 		mntmBts.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				BTS_Albums.main(null);
+				MainTextBox.setText(BTS_Albums.main(null));
 			}
 		});
 		menuBar_1.add(mntmBts);
@@ -114,7 +182,7 @@ public class mainUI extends JFrame{
 		JMenuItem mntmMusic = new JMenuItem("Music");
 		mntmMusic.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Music.main(null);
+				MainTextBox.setText(Music.main(null));
 			}
 		});
 		menuBar_1.add(mntmMusic);
@@ -122,7 +190,7 @@ public class mainUI extends JFrame{
 		JMenuItem mntmElectronics = new JMenuItem("Electronics");
 		mntmElectronics.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Electronics.main(null);
+				MainTextBox.setText(Electronics.main(null));
 			}
 		});
 		menuBar_1.add(mntmElectronics);
@@ -130,7 +198,7 @@ public class mainUI extends JFrame{
 		JMenuItem mntmApparel = new JMenuItem("Apparel");
 		mntmApparel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Apparel.main(null);
+				MainTextBox.setText(Apparel.main(null));
 			}
 		});
 		menuBar_1.add(mntmApparel);
@@ -138,7 +206,7 @@ public class mainUI extends JFrame{
 		JMenuItem mntmSnacks = new JMenuItem("Snacks");
 		mntmSnacks.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Snacks.main(null);
+				MainTextBox.setText(Snacks.main(null));
 			}
 		});
 		menuBar_1.add(mntmSnacks);
@@ -146,16 +214,21 @@ public class mainUI extends JFrame{
 		JMenuItem mntmOther = new JMenuItem("Other");
 		mntmOther.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Other.main(null);
+				MainTextBox.setText(Other.main(null));
 			}
 		});
 		menuBar_1.add(mntmOther);
 		
 	
-		
+	
 		
 	}
 	public int main;
 	private JTextField txtCasInspired;
 	private JTextField textField;
+	private JTextField ItemCode;
+	private JTextField Quantity;
+	private JTextField Usernames;
+	
+
 }

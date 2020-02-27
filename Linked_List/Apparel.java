@@ -20,7 +20,7 @@ public class Apparel
 		return (name + " " + description + " " + price);
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		//add apparel
 		Apparel Tshirt = new Apparel("10 pack white T-shirts", 
@@ -46,6 +46,8 @@ public class Apparel
 		System.out.println(Hoodie);
 		System.out.println(Uggs);
 		System.out.println(Jeans);
+		
+		return Tshirt.toString() +"\n\n"+ ParachutePants +"\n\n" + Nike +"\n\n" + Crocs +"\n\n" + Hoodie +"\n\n" + Uggs +"\n\n" + Jeans;
 	}
 	
 	public static String delete() {

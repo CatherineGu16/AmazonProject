@@ -20,7 +20,7 @@ public class Electronics
 		return (name + " " + description + " " + price);
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		//add electronics
 		Electronics dell = new Electronics("Dell-Inspiron 15.6''", "Touchscreen, Intel Core i5, 8GB Memory, color: black", "$500.00");
@@ -39,6 +39,9 @@ public class Electronics
 		System.out.println(iPad);
 		System.out.println(TV);
 		System.out.println(watch);
+		
+		return dell.toString() +"\n\n"+ macbook +"\n\n" + iPhonePro +"\n\n" + iPad +"\n\n" + TV +"\n\n" + watch;
+		
 	}
 	
 	public static String delete() {

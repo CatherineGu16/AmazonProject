@@ -20,7 +20,7 @@ public class BTS_Albums
 		return (name + " " + description + " " + price);
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		//add BTS albums
 		BTS_Albums MapSoul7 = new BTS_Albums("Map of the Soul: 7", 
@@ -45,6 +45,8 @@ public class BTS_Albums
 		System.out.println(Tear);
 		System.out.println(DarkWild);
 		System.out.println(NeverWalk);
+		
+		return MapSoul7.toString() +"\n\n"+ MapSoulPersona +"\n\n" + Wings +"\n\n" + Answer +"\n\n" + Tear +"\n\n" + DarkWild +"\n\n" + NeverWalk;
 	}
 	
 	public static String delete() {

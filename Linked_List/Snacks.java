@@ -20,7 +20,7 @@ public class Snacks
 		return (name + " " + description + " " + price);
 	}
 	
-	public static void main(String[] args)
+	public static String main(String[] args)
 	{
 		//add snacks
 		Snacks chips = new Snacks("Catherine's chips", "Bestest chips ever, sponsored by Sravani", "$5.00");
@@ -39,6 +39,8 @@ public class Snacks
 		System.out.println(gummybears);
 		System.out.println(goldfish);
 		System.out.println(bar);
+		
+		return chips.toString() +"\n\n"+ cookies +"\n\n" + hotcheetos +"\n\n" + popcorn +"\n\n" + gummybears +"\n\n" + goldfish +"\n\n" + bar;
 	}
 	
 	public static String delete() {
