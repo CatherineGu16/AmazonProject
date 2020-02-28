@@ -79,40 +79,28 @@ public class Categories
 	public void addMusic()
 	{
     	//add Music
-    	Music.add(new Music("\"Circles\" by Post Malone", "Time: 3:35", "$1.29"));
-    	System.out.println("Music: " + Music);
-    	Music.add(new Music("\"Chills\" by Why Don't We", "Time: 2:45", "$1.29"));
-    	System.out.println("Music: " + Music);
-    	Music.add(new Music("\"When the Party's Over\" by Billie Eilish", "Time: 3:16", "$1.29"));
-    	System.out.println("Music: " + Music);
-    	Music.add(new Music("\"What Makes You Beautiful\" by One Direction", "Time: 3:19", "$1.29"));
-    	System.out.println("Music: " + Music);
-    	Music.add(new Music("\"Love Story\" by Taylor Swift", "Time: 3:55", "$1.29"));
-    	System.out.println("Music: " + Music);
-    	Music.add(new Music("\"Thank you, next\" by Ariana Grande", "Time: 3:27", "$1.29"));
-    	System.out.println("Music: " + Music);
-    	Music.add(new Music("\"Memories\" by Maroon 5", "Time: 3:09", "$1.29"));
-    	System.out.println("Music: " + Music);
+		Music Circles = new Music("#301","\"Circles\" by Post Malone", "Time: 3:35", "$1.29");
+		Music Chills = new Music("#302","\"Chills\" by Why Don't We", "Time: 2:45", "$1.29");
+		Music Partyover = new Music("#303","\"When the Party's Over\" by Billie Eilish", "Time: 3:16", "$1.29");
+		Music Beautiful = new Music("#304","\"What Makes You Beautiful\" by One Direction", "Time: 3:19", "$1.29");
+		Music Lovestory = new Music("#305","\"Love Story\" by Taylor Swift", "Time: 3:55", "$1.29");
+		Music Thankyounext = new Music("#306","\"Thank you, next\" by Ariana Grande", "Time: 3:27", "$1.29");
+		Music Memories = new Music("#307","\"Memories\" by Maroon 5", "Time: 3:09", "$1.29");
+
 	}
 	
 	public void addSnacks()
 	{
     	//add Music
-    	Snacks.add(new Snacks("Catherine's chips", "Bestest chips ever, sponsored by Sravani", "$5.00"));
-    	System.out.println("Snacks: " + Snacks);
-    	Snacks.add(new Snacks("Chocolate chip cookies", "Pack of 20 cookies", "$6.00"));
-    	System.out.println("Snacks: " + Snacks);
-    	Snacks.add(new Snacks("Flamin' Hot Cheetos", "Made with real cheese", "$3.00"));
-    	System.out.println("Snacks: " + Snacks);
-    	Snacks.add(new Snacks("Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88"));
-    	System.out.println("Snacks: " + Snacks);
-    	Snacks.add(new Snacks("Haribo Gummy Bears", "5 lb, approximately 985 pieces, America's #1 selling gummy bear", "$12.79"));
-    	System.out.println("Snacks: " + Snacks);
-    	Snacks.add(new Snacks("Pepperidge Farm Xtra Cheddar Goldfish", 
-				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64"));
-    	System.out.println("Snacks: " + Snacks);
-    	Snacks.add(new Snacks("Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52"));
-    	System.out.println("Snacks: " + Snacks);
+		Snacks chips = new Snacks("#401","Catherine's chips", "Bestest chips ever, sponsored by Sravani", "$5.00");
+		Snacks cookies = new Snacks("#402","Chocolate chip cookies", "Pack of 20 cookies", "$6.00");
+		Snacks hotcheetos = new Snacks("#403","Flamin' Hot Cheetos", "Made with real cheese", "$3.00");
+		Snacks popcorn = new Snacks("#404","Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88");
+		Snacks gummybears = new Snacks("#405","Haribo Gummy Bears", "5 lb, approximately 985 pieces, America's #1 selling gummy bear", "$12.79");
+		Snacks goldfish = new Snacks("#406","Pepperidge Farm Xtra Cheddar Goldfish", 
+				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64");
+		Snacks bar = new Snacks("#407","Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52");
+
 	}
 	
 	public void addElectronics()
@@ -132,21 +120,16 @@ public class Categories
 	public void addOther()
 	{
     	//add Music
-    	Other.add(new Other("Pop socket", 
-				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00"));
-    	System.out.println("Other: " + Other);
-    	Other.add(new Other("Otterbox Symmetry Case", 
-				"synthetic rubber, ultra thin, raised bumper", "$45.00"));
-    	System.out.println("Other: " + Other);
-    	Other.add(new Other("Penn Pro Tennis Balls", 
-				"longest lasting tennis balls, LongPlay felt", "$80.00"));
-    	System.out.println("Other: " + Other);
-    	Other.add(new Other("Papermate Clearpoint Mechanical Pencils", 
-				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00"));
-    	System.out.println("Other: " + Other);
-    	Other.add(new Other("Diamond and Blue Sapphire Halo Necklace", 
-				"New 28.9 ctw diamond, gold, and sapphire", "$45950"));
-    	System.out.println("Other: " + Other);
+		Other popsocket = new Other("#501","Pop socket", 
+				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00");
+		Other iPhoneCase = new Other("#502","Otterbox Symmetry Case", 
+				"synthetic rubber, ultra thin, raised bumper", "$45.00");
+		Other tennisballs = new Other("#503","Penn Pro Tennis Balls", 
+				"longest lasting tennis balls, LongPlay felt", "$80.00");
+		Other pencil = new Other("#504","Papermate Clearpoint Mechanical Pencils", 
+				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00");
+		Other necklace = new Other("#505","Diamond and Blue Sapphire Halo Necklace", 
+				"New 28.9 ctw diamond, gold, and sapphire", "$45950");
 	}
 	
 	public void removeproducts()

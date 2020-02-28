@@ -3,12 +3,14 @@ import UI.*;
 public class Other 
 {
 	//make objects
+	String item;
 	String name;
 	String description;
 	String price;
 	
-	public Other(String n, String d, String p)
+	public Other(String i, String n, String d, String p)
 	{
+		this.item = i;
 		this.name = n;
 		this.description = d;
 		this.price = p;
@@ -17,21 +19,21 @@ public class Other
 	public String toString() 
 	{
 		//toString
-		return (name + "\n" + description + "\nPrice: " + price);
+		return (item + "\n" + name + "\n" + description + "\nPrice: " + price);
 	}
 	
 	public static String main(String[] args)
 	{
 		//add miscellaneous objects
-		Other popsocket = new Other("Pop socket", 
+		Other popsocket = new Other("#501","Pop socket", 
 				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00");
-		Other iPhoneCase = new Other("Otterbox Symmetry Case", 
+		Other iPhoneCase = new Other("#502","Otterbox Symmetry Case", 
 				"synthetic rubber, ultra thin, raised bumper", "$45.00");
-		Other tennisballs = new Other("Penn Pro Tennis Balls", 
+		Other tennisballs = new Other("#503","Penn Pro Tennis Balls", 
 				"longest lasting tennis balls, LongPlay felt", "$80.00");
-		Other pencil = new Other("Papermate Clearpoint Mechanical Pencils", 
+		Other pencil = new Other("#504","Papermate Clearpoint Mechanical Pencils", 
 				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00");
-		Other necklace = new Other("Diamond and Blue Sapphire Halo Necklace", 
+		Other necklace = new Other("#505","Diamond and Blue Sapphire Halo Necklace", 
 				"New 28.9 ctw diamond, gold, and sapphire", "$45950");
 
 
