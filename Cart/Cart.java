@@ -64,7 +64,7 @@ public class Cart implements Cloneable {
 		public static String main(String[] args)
 		{
 			
-			return 0;
+			return totalcost(total, itemcost);
 		}
 		
 		

@@ -68,6 +68,11 @@ public class ShoppingCartUI extends JFrame{
 		panel_1.add(lblTotal);
 		
 		textField = new JTextField();
+		textField.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//link to total
+			}
+		});
 		textField.setFont(new Font("Lucida Grande", Font.PLAIN, 35));
 		textField.setEditable(false);
 		textField.setText("$200.00");
