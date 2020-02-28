@@ -191,6 +191,7 @@ public class mainUI extends JFrame{
 				
 			}
 		});
+		//
 		//Button Checkout gets text from the text boxes and sets text to nothing. 
 		//Needs a method to add text to the cart 
 		//CartList.setText(class/Method output);
