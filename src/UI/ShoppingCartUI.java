@@ -85,7 +85,7 @@ public class ShoppingCartUI extends JFrame{
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setOpaque(true);
 		lblNewLabel.setBackground(Color.PINK);
-		lblNewLabel.setBounds(22, 92, 247, 287);
+		lblNewLabel.setBounds(22, 92, 189, 191);
 		getContentPane().add(lblNewLabel);
 		//lblNewLabel.setIcon(new ImageIcon("src/uggly.jpg"));
 	}
