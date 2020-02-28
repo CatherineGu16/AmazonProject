@@ -283,7 +283,11 @@ public class mainUI extends JFrame{
 	
 	//
 	public mainUI() {
-	
+		//In Order to create work in Window Builder you need to have the constructor 
+		//If you want to run get rid of Constructor
+		//make sure all the code is in the Create Layout Method 
+		
+		createLayout();
 		
 	}
 
