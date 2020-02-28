@@ -1,11 +1,12 @@
 package Cart;
-
+import UI.*;
 
 public class Cart implements Cloneable {
 	
 	public String itemName;
-	public int itemCost;
+	public double itemCost;
 	public int quantity;
+	public double total = 0;
 
 	
 	public void CartItem()
@@ -13,12 +14,11 @@ public class Cart implements Cloneable {
 		
 	}
 	
-	public void CartItem(String itemName, int itemCost, int quantity)
+	public void CartItem(String itemName, double itemCost, int quantity)
 	{
 		this.itemName = itemName;
 		this.itemCost = itemCost;
 		this.quantity = quantity;
-
 		
 	}
 	
@@ -27,14 +27,12 @@ public class Cart implements Cloneable {
 	
 	}
 
-
 		public void subtract(Cart otherItem)
 		{
 			this.quantity = this.quantity - otherItem.quantity;
 		}
 
-
-
+		
 		public boolean equals(Object other)
 		{
 			if (this == other) return true;
@@ -55,5 +53,20 @@ public class Cart implements Cloneable {
 		{
 			return itemName+" cost: "+itemCost+" qty: "+quantity;
 		}
+		
+		public double totalcost(double total, double itemcost)
+		{
+			total = total + itemcost;
+			return (total);
+		}
+		
+		
+		public static String main(String[] args)
+		{
+			
+			return 0;
+		}
+		
+		
 	}
 
