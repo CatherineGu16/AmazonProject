@@ -57,8 +57,8 @@ public class mainUI extends JFrame{
 		getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(30, 144, 255));
 		panel.setBounds(0, 0, 638, 100);
+		panel.setBackground(new Color(30, 144, 255));
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
@@ -92,23 +92,24 @@ public class mainUI extends JFrame{
 		
 		
 		JTextPane txtpnYop = new JTextPane();
-		txtpnYop.setText("yop");
 		txtpnYop.setBounds(115, 232, -46, 65);
+		txtpnYop.setText("yop");
 		getContentPane().add(txtpnYop);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 100, 638, 487);
+		scrollPane.setBounds(0, 100, 422, 487);
 		getContentPane().add(scrollPane);
 		
 		
 				
 		
 		JTextPane MainTextBox = new JTextPane();
+		MainTextBox.setBackground(Color.WHITE);
 		MainTextBox.setEditable(false);
 		scrollPane.setViewportView(MainTextBox);
 		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
 		MainTextBox.setText("Welcome to C.A.S. Inspired! ");
-		//
+		
 		
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
@@ -127,8 +128,8 @@ public class mainUI extends JFrame{
 		//
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(Color.YELLOW);
 		panel_1.setBounds(635, 0, 153, 587);
+		panel_1.setBackground(Color.YELLOW);
 		getContentPane().add(panel_1);
 		panel_1.setLayout(null);
 		
@@ -190,9 +191,11 @@ public class mainUI extends JFrame{
 		JButton addToCart = new JButton("Add to Cart");
 		addToCart.setBounds(10, 170, 135, 15);
 		panel_1.add(addToCart);
+		
+		
 	    addToCart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-		
+				
 				
 			}
 		});
@@ -206,6 +209,11 @@ public class mainUI extends JFrame{
 				mntmApparel.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Apparel.main(null));
+						JLabel Thuggs = new JLabel("");
+						Thuggs.setBackground(Color.WHITE);
+						Thuggs.setBounds(434, 123, 153, 253);
+						getContentPane().add(Thuggs);
+						Thuggs.setIcon(new ImageIcon("src/uggly.jpg"));
 					}
 				});
 				menuBar_1.add(mntmApparel);
