@@ -40,24 +40,21 @@ public class Categories
 	public void addBTS()
 	  {
 		//add BTS Albums
-    	BTS_albums.add(new BTS_Albums("Map of the Soul: 7", 
-				"4 versions, photobook, lyric book, minibook, postcard, sticker, poster", "$25.00"));
-    	System.out.println("BTS: " + BTS_albums);
-    	BTS_albums.add(new BTS_Albums("Map of the Soul: Persona", 
-				"4 versions, photobook, sticker, minibook", "$18.00"));
-    	System.out.println("BTS: " + BTS_albums);
-    	BTS_albums.add(new BTS_Albums("BTS 2nd Album[Wings]", 
-				"1 CD, photobook, photocard, poster", "$21.00"));
-    	System.out.println("BTS: " + BTS_albums);
-    	BTS_albums.add(new BTS_Albums("Love Yourself: Answer", 
-				"2 CDs, photobook, photocard, poster", "$21.00"));
-    	System.out.println("BTS: " + BTS_albums);
-    	BTS_albums.add(new BTS_Albums("BTS 1st Album [Dark & Wild]", 
-				"1 CD, 2 animation pictures, 2 photocards", "$18.00"));
-    	System.out.println("BTS: " + BTS_albums);
-    	BTS_albums.add(new BTS_Albums("You Never Walk Alone", 
-				"1 CD, photobook, photocard, poster", "$23.00"));
-    	System.out.println("BTS: " + BTS_albums);
+		BTS_Albums MapSoul7 = new BTS_Albums("#101","Map of the Soul: 7", 
+				"4 versions, photobook, lyric book, minibook, postcard, sticker, poster", "$25.00");
+		BTS_Albums MapSoulPersona = new BTS_Albums("#102","Map of the Soul: Persona", 
+				"4 versions, photobook, sticker, minibook", "$18.00");
+		BTS_Albums Wings = new BTS_Albums("#103","BTS 2nd Album[Wings]", 
+				"1 CD, photobook, photocard, poster", "$21.00");
+		BTS_Albums Answer = new BTS_Albums("#104","Love Yourself: Answer", 
+				"2 CDs, photobook, photocard, poster", "$21.00");
+		BTS_Albums Tear = new BTS_Albums("#105","Love Yourself: Tear", 
+				"1CD, photobook, dual member photocard, poster", "$23.00");
+		BTS_Albums DarkWild = new BTS_Albums("#106","BTS 1st Album [Dark & Wild]", 
+				"1 CD, 2 animation pictures, 2 photocards", "$18.00");
+		BTS_Albums NeverWalk = new BTS_Albums("#107","You Never Walk Alone", 
+				"1 CD, photobook, photocard, poster", "$23.00");
+
 	  }
 	
 	public void addApparel()
@@ -121,22 +118,17 @@ public class Categories
 	public void addElectronics()
 	{
     	//add Music
-    	Electronics.add(new Electronics("Dell-Inspiron 15.6''", "Touchscreen, Intel Core i5, 8GB Memory, color: black", "$500.00"));
-    	System.out.println("Electronics: " + Electronics);
-    	Electronics.add(new Electronics("13-inch Macbook Pro", "1.4GHz Quad-Core Processor, touchbar, touch ID, 256 GB", "$1499.00"));
-    	System.out.println("Electronics: " + Electronics);
-    	Electronics.add(new Electronics("iPhone 11 Pro Max", "Triple-camera system, 256 GB, Color: Space Gray", "$1249.00"));
-    	System.out.println("Electronics: " + Electronics);
-    	Electronics.add(new Electronics("12.9 inch iPad Pro", 
-				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00"));
-    	System.out.println("Electronics: " + Electronics);
-    	Electronics.add(new Electronics("50-inch Samsung Smart 4K Ultra HD TV", "2 HDMI ports, Pur Color, connect & share", "$300.00"));
-    	System.out.println("Electronics: " + Electronics);
-    	Electronics.add(new Electronics("Apple Watch Series 5", 
-				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00"));
-    	System.out.println("Electronics: " + Electronics);
+		Electronics dell = new Electronics("#201","Dell-Inspiron 15.6''", "Touchscreen, Intel Core i5, 8GB Memory, color: black", "$500.00");
+		Electronics macbook = new Electronics("#202","13-inch Macbook Pro", "1.4GHz Quad-Core Processor, touchbar, touch ID, 256 GB", "$1499.00");
+		Electronics iPhonePro = new Electronics("#203","iPhone 11 Pro Max", "Triple-camera system, 256 GB, Color: Space Gray", "$1249.00");
+		Electronics iPad = new Electronics("#204","12.9 inch iPad Pro", 
+				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00");
+		Electronics TV = new Electronics("#205","50-inch Samsung Smart 4K Ultra HD TV", "2 HDMI ports, Pur Color, connect & share", "$300.00");
+		Electronics watch = new Electronics("#206","Apple Watch Series 5", 
+				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00");
+
 	}
-	
+	//
 	public void addOther()
 	{
     	//add Music
