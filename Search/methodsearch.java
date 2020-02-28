@@ -2,7 +2,8 @@ package Search;
 
 import java.util.ArrayList;
 
-import Linked_List.CircleQueue;
+import Linked_List.*;
+import UI.mainUI;
 
 public class methodsearch {
 	private  boolean Found;
@@ -22,8 +23,8 @@ public class methodsearch {
         
     }
 
-	public static void main(Object object) {
-		// TODO Auto-generated method stub
+	public void main() {
+		
 		
 	}
 

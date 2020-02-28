@@ -80,17 +80,7 @@ public class mainUI extends JFrame{
 		panel.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnSearch = new JButton("Search");
-		btnSearch.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String Search = btnSearch.getText();
-				methodsearch.main(null);
-			}
-		});
-		btnSearch.setFont(new Font("Lucida Grande", Font.BOLD | Font.ITALIC, 13));
-		btnSearch.setBackground(Color.YELLOW);
-		btnSearch.setBounds(465, 61, 111, 33);
-		panel.add(btnSearch);
+		//
 		
 		Usernames.setText("Guest");
 		Usernames.setBounds(510, 11, 120, 20);
@@ -118,6 +108,23 @@ public class mainUI extends JFrame{
 		scrollPane.setViewportView(MainTextBox);
 		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
 		MainTextBox.setText("Welcome to C.A.S. Inspired! ");
+		//
+		
+		JButton btnSearch = new JButton("Search");
+		btnSearch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String search = textField.getText();
+				
+				MainTextBox.setText("Yeet");
+				
+			}
+		});
+		btnSearch.setFont(new Font("Lucida Grande", Font.BOLD | Font.ITALIC, 13));
+		btnSearch.setBackground(Color.YELLOW);
+		btnSearch.setBounds(465, 61, 111, 33);
+		panel.add(btnSearch);
+		
+		//
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.YELLOW);

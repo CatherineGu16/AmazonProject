@@ -152,12 +152,4 @@ public class Categories
 	  }
 	
 	
-	public static void main(String args[])
-	{
-		Categories BTS_albums = new Categories();
-
-		BTS_albums.addBTS();
-		BTS_albums.displayQueue();
-		BTS_albums.removeproducts();
-	}
 }
