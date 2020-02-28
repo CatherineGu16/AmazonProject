@@ -16,7 +16,7 @@ public class Categories
 	private CircleQueue Other;
 	private int size = 5;	
     
-	public ArrayList<CircleQueue> GetData(){
+	public ArrayList<CircleQueue> getData(){
 	  ArrayList<CircleQueue> array = new ArrayList<CircleQueue>();
 	  array.add(BTS_albums);
 	  array.add(Apparel);

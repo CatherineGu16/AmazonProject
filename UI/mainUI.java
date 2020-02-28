@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
-
+import javax.swing.DefaultListModel;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
@@ -23,6 +23,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.JScrollBar;
 import Search.*;
+import Linked_List.*;
+
+
+import java.util.Scanner;
+
+import java.io.*;
 //Creates Main UI
 public class mainUI extends JFrame{
 	
@@ -116,6 +122,11 @@ public class mainUI extends JFrame{
 				String search = textField.getText();
 				
 				MainTextBox.setText("Yeet");
+				ArrayList<String> methods = methodsearch.getMethods(textField.getText());
+				MainTextBox.setText("");
+				for (String method: methods) {
+					MainTextBox.addElement(method);
+				}
 				
 			}
 		});
@@ -180,9 +191,15 @@ public class mainUI extends JFrame{
 				
 			}
 		});
+		//Button Checkout gets text from the text boxes and sets text to nothing. 
+		//Needs a method to add text to the cart 
+		//CartList.setText(class/Method output);
 		btnCheckout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new ShoppingCartUI().setVisible(true);
+				Quantity.getText();
+				ItemCode.getText();
+				CartList.setText("");
 			}
 		});
 		
