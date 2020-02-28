@@ -81,5 +81,12 @@ public class ShoppingCartUI extends JFrame{
 		textField.setBounds(102, 6, 175, 52);
 		panel_1.add(textField);
 		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setOpaque(true);
+		lblNewLabel.setBackground(Color.PINK);
+		lblNewLabel.setBounds(22, 92, 247, 287);
+		getContentPane().add(lblNewLabel);
+		//lblNewLabel.setIcon(new ImageIcon("src/uggly.jpg"));
 	}
 }
