@@ -1,5 +1,5 @@
 package UI;
-
+import individualItems.*;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.EventQueue;
@@ -100,7 +100,7 @@ public class mainUI extends JFrame{
 		getContentPane().add(txtpnYop);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(153, 100, 485, 487);
+		scrollPane.setBounds(280, 100, 358, 487);
 		getContentPane().add(scrollPane);
 		
 		
@@ -196,11 +196,11 @@ public class mainUI extends JFrame{
 		panel_1.add(addToCart);
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(0, 100, 153, 487);
+		scrollPane_2.setBounds(0, 100, 282, 487);
 		getContentPane().add(scrollPane_2);
 		
 		JPanel ImagePanel = new JPanel();
-		ImagePanel.setBackground(new Color(255, 250, 205));
+		ImagePanel.setBackground(Color.WHITE);
 		scrollPane_2.setViewportView(ImagePanel);
 		ImagePanel.setLayout(new GridLayout(0, 1, 0, 0));
 		
@@ -208,36 +208,83 @@ public class mainUI extends JFrame{
 	    image1.setBackground(Color.WHITE);
 		ImagePanel.add(image1);
 		
+		JTextPane tp1 = new JTextPane();
+		tp1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp1);
+		
 		
 		JLabel image2 = new JLabel("");
 		image2.setBackground(Color.WHITE);
 		ImagePanel.add(image2);
+		
+		JTextPane tp2 = new JTextPane();
+		tp2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp2);
 		//Thuggs.setIcon(new ImageIcon("src/uggly.jpg"));
 	
 		JLabel image3 = new JLabel("");
 		image3.setBackground(Color.WHITE);
 		ImagePanel.add(image3);
 		
+		JTextPane tp3 = new JTextPane();
+		tp3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp3);
+		
 		JLabel image4 = new JLabel("");
+		image4.setBackground(Color.WHITE);
 		ImagePanel.add(image4);
 		
+		JTextPane tp4 = new JTextPane();
+		tp4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp4);
+		
 		JLabel image5 = new JLabel("");
+		image5.setBackground(Color.WHITE);
 		ImagePanel.add(image5);
 		
+		JTextPane tp5 = new JTextPane();
+		tp5.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp5);
+		
 		JLabel image6 = new JLabel("");
+		image6.setBackground(Color.WHITE);
 		ImagePanel.add(image6);
 		
+		JTextPane tp6 = new JTextPane();
+		tp6.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp6);
+		
 		JLabel image7 = new JLabel("");
+		image7.setBackground(Color.WHITE);
 		ImagePanel.add(image7);
 		
+		JTextPane tp7 = new JTextPane();
+		tp7.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp7);
+		
 		JLabel image8 = new JLabel("");
+		image8.setBackground(Color.WHITE);
 		ImagePanel.add(image8);
 		
+		JTextPane tp8 = new JTextPane();
+		tp8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp8);
+		
 		JLabel image9 = new JLabel("");
+		image9.setBackground(Color.WHITE);
 		ImagePanel.add(image9);
 		
+		JTextPane tp9 = new JTextPane();
+		tp9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp9);
+		
 		JLabel image10 = new JLabel("");
+		image10.setBackground(Color.WHITE);
 		ImagePanel.add(image10);
+		
+		JTextPane tp10 = new JTextPane();
+		tp10.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp10);
 	
 
 		
@@ -258,16 +305,26 @@ public class mainUI extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Apparel.main(null));
 				
-						image1.setText("Item #001");
+						image1.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp1.setText(Tshirt.main(null));
 						image2.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp2.setText(ParachutePants.main(null));
 						image3.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp3.setText(Nike.main(null));
 						image4.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp4.setText(Crocs.main(null));
 						image5.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp5.setText(Hoodie.main(null));
 						image6.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp6.setText(Uggs.main(null));
 						image7.setIcon(new ImageIcon("src/uggly.jpg"));
-						image8.setIcon(new ImageIcon("src/uggly.jpg"));
-						image9.setIcon(new ImageIcon("src/uggly.jpg"));
-						image10.setIcon(new ImageIcon("src/uggly.jpg"));
+						tp7.setText(Jeans.main(null));
+						image8.setIcon(new ImageIcon(""));
+						tp8.setText("");
+						image9.setIcon(new ImageIcon(""));
+						tp9.setText("");
+						image10.setIcon(new ImageIcon(""));
+						tp10.setText("");
 						
 						}
 				});
@@ -278,16 +335,7 @@ public class mainUI extends JFrame{
 		mntmBts.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(BTS_Albums.main(null));
-				image1.setIcon(new ImageIcon("src/uggly.jpg"));
-				image2.setIcon(new ImageIcon("src/uggly.jpg"));
-				image3.setIcon(new ImageIcon("src/uggly.jpg"));
-				image4.setIcon(new ImageIcon("src/uggly.jpg"));
-				image5.setIcon(new ImageIcon("src/uggly.jpg"));
-				image6.setIcon(new ImageIcon("src/uggly.jpg"));
-				image7.setIcon(new ImageIcon("src/uggly.jpg"));
-				image8.setIcon(new ImageIcon("src/uggly.jpg"));
-				image9.setIcon(new ImageIcon("src/uggly.jpg"));
-				image10.setIcon(new ImageIcon("src/uggly.jpg"));
+				
 		
 			
 			}
@@ -299,16 +347,7 @@ public class mainUI extends JFrame{
 				mntmElectronics.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Electronics.main(null));
-						image1.setIcon(new ImageIcon("src/uggly.jpg"));
-						image2.setIcon(new ImageIcon("src/uggly.jpg"));
-						image3.setIcon(new ImageIcon("src/uggly.jpg"));
-						image4.setIcon(new ImageIcon("src/uggly.jpg"));
-						image5.setIcon(new ImageIcon("src/uggly.jpg"));
-						image6.setIcon(new ImageIcon("src/uggly.jpg"));
-						image7.setIcon(new ImageIcon("src/uggly.jpg"));
-						image8.setIcon(new ImageIcon("src/uggly.jpg"));
-						image9.setIcon(new ImageIcon("src/uggly.jpg"));
-						image10.setIcon(new ImageIcon("src/uggly.jpg"));
+						
 					}
 				});
 				menuBar_1.add(mntmElectronics);
