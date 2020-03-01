@@ -1,15 +1,22 @@
 package Linked_List;
+import java.awt.Color;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 import UI.*;
 public class Apparel 
 {
 	//make objects
+	
 	String item;
 	String name;
 	String description;
 	String price;
 	
-	public Apparel(String i, String n, String d, String p)
+	public Apparel( String i, String n, String d, String p)
 	{	
+
 		this.item = i;
 		this.name = n;
 		this.description = d;
@@ -19,13 +26,16 @@ public class Apparel
 	public String toString() 
 	{
 		//toString
-		return (item+ "\n" + name + "\n" + description + "\n" + price);
+		return ( "\n" + item + "\n" + name + "\n" + description + "\n" + price);
 	}
 	
 	public static String main(String[] args)
 	{
+	
+	
+		
 		//add apparel
-		Apparel Tshirt = new Apparel("#001","10 pack white T-shirts", 
+		Apparel Tshirt = new Apparel( "#001","10 pack white T-shirts", 	
 				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
 		Apparel ParachutePants = new Apparel("#002","Parachute pants", 
 				"Gold, parachute pants with elastic wasteband, fits most tetens and adults", "$18.00");
@@ -48,6 +58,8 @@ public class Apparel
 		System.out.println(Hoodie);
 		System.out.println(Uggs);
 		System.out.println(Jeans);
+		
+		
 		
 		return Tshirt.toString() +"\n\n"+ ParachutePants +"\n\n" + Nike +"\n\n" + Crocs +"\n\n" + Hoodie +"\n\n" + Uggs +"\n\n" + Jeans;
 	}

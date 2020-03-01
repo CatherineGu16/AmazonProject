@@ -23,6 +23,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.JScrollBar;
 import Search.*;
+import java.awt.GridLayout;
+import java.awt.CardLayout;
+import javax.swing.BoxLayout;
 //Creates Main UI
 public class mainUI extends JFrame{
 	
@@ -52,7 +55,7 @@ public class mainUI extends JFrame{
 	public void createLayout() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 647);
+		setBounds(100, 100, 800, 645);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		
@@ -97,16 +100,16 @@ public class mainUI extends JFrame{
 		getContentPane().add(txtpnYop);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 100, 422, 487);
+		scrollPane.setBounds(153, 100, 485, 487);
 		getContentPane().add(scrollPane);
 		
 		
 				
 		
 		JTextPane MainTextBox = new JTextPane();
+		scrollPane.setViewportView(MainTextBox);
 		MainTextBox.setBackground(Color.WHITE);
 		MainTextBox.setEditable(false);
-		scrollPane.setViewportView(MainTextBox);
 		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
 		MainTextBox.setText("Welcome to C.A.S. Inspired! ");
 		
@@ -192,6 +195,51 @@ public class mainUI extends JFrame{
 		addToCart.setBounds(10, 170, 135, 15);
 		panel_1.add(addToCart);
 		
+		JScrollPane scrollPane_2 = new JScrollPane();
+		scrollPane_2.setBounds(0, 100, 153, 487);
+		getContentPane().add(scrollPane_2);
+		
+		JPanel ImagePanel = new JPanel();
+		ImagePanel.setBackground(new Color(255, 250, 205));
+		scrollPane_2.setViewportView(ImagePanel);
+		ImagePanel.setLayout(new GridLayout(0, 1, 0, 0));
+		
+		JLabel image1 = new JLabel("");
+	    image1.setBackground(Color.WHITE);
+		ImagePanel.add(image1);
+		
+		
+		JLabel image2 = new JLabel("");
+		image2.setBackground(Color.WHITE);
+		ImagePanel.add(image2);
+		//Thuggs.setIcon(new ImageIcon("src/uggly.jpg"));
+	
+		JLabel image3 = new JLabel("");
+		image3.setBackground(Color.WHITE);
+		ImagePanel.add(image3);
+		
+		JLabel image4 = new JLabel("");
+		ImagePanel.add(image4);
+		
+		JLabel image5 = new JLabel("");
+		ImagePanel.add(image5);
+		
+		JLabel image6 = new JLabel("");
+		ImagePanel.add(image6);
+		
+		JLabel image7 = new JLabel("");
+		ImagePanel.add(image7);
+		
+		JLabel image8 = new JLabel("");
+		ImagePanel.add(image8);
+		
+		JLabel image9 = new JLabel("");
+		ImagePanel.add(image9);
+		
+		JLabel image10 = new JLabel("");
+		ImagePanel.add(image10);
+	
+
 		
 	    addToCart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -209,12 +257,19 @@ public class mainUI extends JFrame{
 				mntmApparel.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Apparel.main(null));
-						JLabel Thuggs = new JLabel("");
-						Thuggs.setBackground(Color.WHITE);
-						Thuggs.setBounds(434, 123, 153, 253);
-						getContentPane().add(Thuggs);
-						Thuggs.setIcon(new ImageIcon("src/uggly.jpg"));
-					}
+				
+						image1.setText("Item #001");
+						image2.setIcon(new ImageIcon("src/uggly.jpg"));
+						image3.setIcon(new ImageIcon("src/uggly.jpg"));
+						image4.setIcon(new ImageIcon("src/uggly.jpg"));
+						image5.setIcon(new ImageIcon("src/uggly.jpg"));
+						image6.setIcon(new ImageIcon("src/uggly.jpg"));
+						image7.setIcon(new ImageIcon("src/uggly.jpg"));
+						image8.setIcon(new ImageIcon("src/uggly.jpg"));
+						image9.setIcon(new ImageIcon("src/uggly.jpg"));
+						image10.setIcon(new ImageIcon("src/uggly.jpg"));
+						
+						}
 				});
 				menuBar_1.add(mntmApparel);
 				
@@ -223,6 +278,18 @@ public class mainUI extends JFrame{
 		mntmBts.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(BTS_Albums.main(null));
+				image1.setIcon(new ImageIcon("src/uggly.jpg"));
+				image2.setIcon(new ImageIcon("src/uggly.jpg"));
+				image3.setIcon(new ImageIcon("src/uggly.jpg"));
+				image4.setIcon(new ImageIcon("src/uggly.jpg"));
+				image5.setIcon(new ImageIcon("src/uggly.jpg"));
+				image6.setIcon(new ImageIcon("src/uggly.jpg"));
+				image7.setIcon(new ImageIcon("src/uggly.jpg"));
+				image8.setIcon(new ImageIcon("src/uggly.jpg"));
+				image9.setIcon(new ImageIcon("src/uggly.jpg"));
+				image10.setIcon(new ImageIcon("src/uggly.jpg"));
+		
+			
 			}
 		});
 		menuBar_1.add(mntmBts);
@@ -232,6 +299,16 @@ public class mainUI extends JFrame{
 				mntmElectronics.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Electronics.main(null));
+						image1.setIcon(new ImageIcon("src/uggly.jpg"));
+						image2.setIcon(new ImageIcon("src/uggly.jpg"));
+						image3.setIcon(new ImageIcon("src/uggly.jpg"));
+						image4.setIcon(new ImageIcon("src/uggly.jpg"));
+						image5.setIcon(new ImageIcon("src/uggly.jpg"));
+						image6.setIcon(new ImageIcon("src/uggly.jpg"));
+						image7.setIcon(new ImageIcon("src/uggly.jpg"));
+						image8.setIcon(new ImageIcon("src/uggly.jpg"));
+						image9.setIcon(new ImageIcon("src/uggly.jpg"));
+						image10.setIcon(new ImageIcon("src/uggly.jpg"));
 					}
 				});
 				menuBar_1.add(mntmElectronics);
@@ -273,10 +350,7 @@ public class mainUI extends JFrame{
 	
 	//
 	public mainUI() {
-		createLayout();
+		//createLayout();
 		
 	}
-
-	
-
 }
