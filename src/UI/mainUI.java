@@ -305,19 +305,19 @@ public class mainUI extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Apparel.main(null));
 				
-						image1.setIcon(new ImageIcon("src/platformCrocs.jpg"));
+						image1.setIcon(new ImageIcon("src/tshirt.jpg"));
 						tp1.setText(Tshirt.main(null));
-						image2.setIcon(new ImageIcon("src/uggly.jpg"));
+						image2.setIcon(new ImageIcon("src/Parachute.jpg"));
 						tp2.setText(ParachutePants.main(null));
-						image3.setIcon(new ImageIcon("src/uggly.jpg"));
+						image3.setIcon(new ImageIcon("src/Nike.jpg"));
 						tp3.setText(Nike.main(null));
-						image4.setIcon(new ImageIcon("src/uggly.jpg"));
+						image4.setIcon(new ImageIcon("src/TallCrocs.jpg"));
 						tp4.setText(Crocs.main(null));
-						image5.setIcon(new ImageIcon("src/uggly.jpg"));
+						image5.setIcon(new ImageIcon("src/Hoodie.jpg"));
 						tp5.setText(Hoodie.main(null));
 						image6.setIcon(new ImageIcon("src/uggly.jpg"));
 						tp6.setText(Uggs.main(null));
-						image7.setIcon(new ImageIcon("src/uggly.jpg"));
+						image7.setIcon(new ImageIcon("src/Jeans.jpg"));
 						tp7.setText(Jeans.main(null));
 						image8.setIcon(new ImageIcon(""));
 						tp8.setText("");
