@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class Wing
+public class Wings
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class Wing
 	String description;
 	String price;
 	
-	public Wing( String i, String n, String d, String p)
+	public Wings( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,7 +36,7 @@ public class Wing
 	
 		
 		//add apparel
-		Wing Wing = new Wing("#103","BTS 2nd Album[Wings]", 
+		Wings Wing = new Wings("#103","BTS 2nd Album[Wings]", 
 				"1 CD, photobook, photocard, poster", "$21.00");
 		System.out.println(Wing);
 		

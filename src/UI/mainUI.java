@@ -305,7 +305,7 @@ public class mainUI extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Apparel.main(null));
 				
-						image1.setIcon(new ImageIcon("src/uggly.jpg"));
+						image1.setIcon(new ImageIcon("src/platformCrocs.jpg"));
 						tp1.setText(Tshirt.main(null));
 						image2.setIcon(new ImageIcon("src/uggly.jpg"));
 						tp2.setText(ParachutePants.main(null));
