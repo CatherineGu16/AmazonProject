@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class MapSoul17
+public class MapSoul7
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class MapSoul17
 	String description;
 	String price;
 	
-	public MapSoul17( String i, String n, String d, String p)
+	public MapSoul7( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,7 +36,7 @@ public class MapSoul17
 	
 		
 		//add apparel
-		MapSoul17 MapSoul17 = new MapSoul17("#101","Map of the Soul: 7", 
+		MapSoul7 MapSoul17 = new MapSoul7("#101","Map of the Soul: 7", 
 				"4 versions, photobook, lyric book, minibook, postcard, sticker, poster", "$25.00");
 		System.out.println(MapSoul17);
 		

@@ -336,8 +336,19 @@ public class mainUI extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(BTS_Albums.main(null));
 				
-		
-			
+				image1.setIcon(new ImageIcon("src/MapOfSoul7.jpg"));
+				tp1.setText(MapSoul7.main(null));
+				image2.setIcon(new ImageIcon("src/Wings.jpg"));
+				tp2.setText(Wings.main(null));
+				image3.setIcon(new ImageIcon("src/Answer.jpg"));
+				tp3.setText(Answer.main(null));
+				image4.setIcon(new ImageIcon("src/Tear.jpg"));
+				tp4.setText(Tear.main(null));
+				image5.setIcon(new ImageIcon("src/DarkWild.jpg"));
+				tp5.setText(DarkWild.main(null));
+				image6.setIcon(new ImageIcon("src/NeverWalk.jpg"));
+				tp6.setText(NeverWalk.main(null));
+
 			}
 		});
 		menuBar_1.add(mntmBts);
