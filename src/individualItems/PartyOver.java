@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class Thankyounext
+public class PartyOver
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class Thankyounext
 	String description;
 	String price;
 	
-	public Thankyounext( String i, String n, String d, String p)
+	public PartyOver( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,13 +36,13 @@ public class Thankyounext
 	
 		
 		//add apparel
-		Thankyounext Thankyounext = new Thankyounext("#004","Balenciaga Platform Thankyounext", 
+		PartyOver PartyOver = new PartyOver("#004","Balenciaga Platform PartyOver", 
 				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
 		
-		System.out.println(Thankyounext);
+		System.out.println(PartyOver);
 		
 		
-		return Thankyounext.toString() ;
+		return PartyOver.toString() ;
 	}
 	
 	public static String delete() {
