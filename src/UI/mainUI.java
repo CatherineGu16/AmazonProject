@@ -34,7 +34,7 @@ public class mainUI extends JFrame{
 	
 	public int main;
 	private JTextField txtCasInspired;
-	private JTextField textField;
+	private JTextField searchtext;
 	private JTextField ItemCode;
 	private JTextField Quantity;
 
@@ -78,10 +78,10 @@ public class mainUI extends JFrame{
 		panel.add(txtCasInspired);
 		txtCasInspired.setColumns(10);
 		
-		textField = new JTextField();
-		textField.setBounds(10, 61, 469, 33);
-		panel.add(textField);
-		textField.setColumns(10);
+		searchtext = new JTextField();
+		searchtext.setBounds(10, 61, 469, 33);
+		panel.add(searchtext);
+		searchtext.setColumns(10);
 		
 		//
 		
@@ -117,7 +117,7 @@ public class mainUI extends JFrame{
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String search = textField.getText();
+				String search = searchtext.getText();
 				
 				MainTextBox.setText("Yeet");
 				

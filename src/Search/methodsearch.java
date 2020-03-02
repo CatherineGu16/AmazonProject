@@ -7,12 +7,22 @@ import UI.mainUI;
 
 public class methodsearch {
 	
-	public void main() {
-		
-		//get search input
-		//make to lower nad ignore spaces
-		//switch case of all products
-		
-	}
-
-}
+	    public void Search() 
+	    { 
+	        String str = "two"; 
+	        switch(str) 
+	        { 
+	            case "one": 
+	                System.out.println("one"); 
+	                break; 
+	            case "two": 
+	                System.out.println("two"); 
+	                break; 
+	            case "three": 
+	                System.out.println("three"); 
+	                break; 
+	            default: 
+	                System.out.println("no match"); 
+	        } 
+	    } 
+	} 
