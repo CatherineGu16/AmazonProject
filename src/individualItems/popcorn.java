@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class Chills
+public class popcorn
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class Chills
 	String description;
 	String price;
 	
-	public Chills( String i, String n, String d, String p)
+	public popcorn( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,13 +36,13 @@ public class Chills
 	
 		
 		//add apparel
-		Chills Chills = new Chills("#004","Balenciaga Platform Chills", 
+		popcorn popcorn = new popcorn("#004","Balenciaga Platform popcorn", 
 				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
 		
-		System.out.println(Chills);
+		System.out.println(popcorn);
 		
 		
-		return Chills.toString() ;
+		return popcorn.toString() ;
 	}
 	
 	public static String delete() {
