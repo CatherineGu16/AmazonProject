@@ -36,8 +36,7 @@ public class LoveStory
 	
 		
 		//add apparel
-		LoveStory LoveStory = new LoveStory("#004","Balenciaga Platform LoveStory", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+		LoveStory LoveStory = new LoveStory("#305","\"Love Story\" by Taylor Swift", "Time: 3:55", "$1.29");
 		
 		System.out.println(LoveStory);
 		

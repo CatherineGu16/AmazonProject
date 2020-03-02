@@ -36,8 +36,7 @@ public class Thankyounext
 	
 		
 		//add apparel
-		Thankyounext Thankyounext = new Thankyounext("#004","Balenciaga Platform Thankyounext", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+		Thankyounext Thankyounext = new Thankyounext("#306","\"Thank you, next\" by Ariana Grande", "Time: 3:27", "$1.29");
 		
 		System.out.println(Thankyounext);
 		

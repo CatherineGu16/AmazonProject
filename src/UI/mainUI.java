@@ -360,7 +360,7 @@ public class mainUI extends JFrame{
 						MainTextBox.setText(Electronics.main(null));
 						
 						image1.setIcon(new ImageIcon("src/.jpg"));
-						tp1.setText(Circles.main(null));
+						tp1.setText(dell.main(null));
 						image2.setIcon(new ImageIcon("src/Wings.jpg"));
 						tp2.setText(Wings.main(null));
 						image3.setIcon(new ImageIcon("src/Answer.jpg"));
@@ -381,6 +381,22 @@ public class mainUI extends JFrame{
 		mntmMusic.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(Music.main(null));
+				
+				image1.setIcon(new ImageIcon("src/Circles.jpg"));
+				tp1.setText(Circles.main(null));
+				image2.setIcon(new ImageIcon("src/Chills.jpg"));
+				tp2.setText(Chills.main(null));
+				image3.setIcon(new ImageIcon("src/PartyOver.jpg"));
+				tp3.setText(PartyOver.main(null));
+				image4.setIcon(new ImageIcon("src/WhatMakesYouBeautiful.jpg"));
+				tp4.setText(Beautiful.main(null));
+				image5.setIcon(new ImageIcon("src/LoveStory.jpg"));
+				tp5.setText(LoveStory.main(null));
+				image6.setIcon(new ImageIcon("src/ThankYouNext.jpg"));
+				tp6.setText(Thankyounext.main(null));
+				image7.setIcon(new ImageIcon("src/Memories.jpg"));
+				tp7.setText(Memories.main(null));
+
 			}
 		});
 		menuBar_1.add(mntmMusic);

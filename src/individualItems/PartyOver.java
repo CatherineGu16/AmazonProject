@@ -36,8 +36,7 @@ public class PartyOver
 	
 		
 		//add apparel
-		PartyOver PartyOver = new PartyOver("#004","Balenciaga Platform PartyOver", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+		PartyOver PartyOver = new PartyOver("#303","\"When the Party's Over\" by Billie Eilish", "Time: 3:16", "$1.29");
 		
 		System.out.println(PartyOver);
 		

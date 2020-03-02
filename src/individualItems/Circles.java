@@ -36,8 +36,7 @@ public class Circles
 	
 		
 		//add apparel
-		Circles Circles = new Circles("#004","Balenciaga Platform Crocs", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+		Circles Circles = new Circles("#301","\"Circles\" by Post Malone", "Time: 3:35", "$1.29");
 		
 		System.out.println(Circles);
 		
