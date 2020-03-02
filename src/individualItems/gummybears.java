@@ -36,9 +36,7 @@ public class gummybears
 	
 		
 		//add apparel
-		gummybears gummybears = new gummybears("#004","Balenciaga Platform gummybears", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		gummybears gummybears = new gummybears("#405","Haribo Gummy Bears", "5 lb, approximately 985 pieces, America's #1 selling gummy bear", "$12.79");
 		System.out.println(gummybears);
 		
 		

@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class popcorn
+public class DiamondRing
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class popcorn
 	String description;
 	String price;
 	
-	public popcorn( String i, String n, String d, String p)
+	public DiamondRing( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,11 +36,12 @@ public class popcorn
 	
 		
 		//add apparel
-		popcorn popcorn = new popcorn("#404","Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88");
-		System.out.println(popcorn);
+		DiamondRing DiamondRing = new DiamondRing("#506","Diamond Ring", "Antique platinum ring set with an 8.88 carat diamond center & 0.70 carats surronding the diamonds", "$68,500");
+
+		System.out.println(DiamondRing);
 		
 		
-		return popcorn.toString() ;
+		return DiamondRing.toString() ;
 	}
 	
 	public static String delete() {

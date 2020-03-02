@@ -36,9 +36,8 @@ public class tennisballs
 	
 		
 		//add apparel
-		tennisballs tennisballs = new tennisballs("#004","Balenciaga Platform tennisballs", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		tennisballs tennisballs = new tennisballs("#503","Penn Pro Tennis Balls", 
+				"longest lasting tennis balls, LongPlay felt", "$80.00");
 		System.out.println(tennisballs);
 		
 		

@@ -36,9 +36,8 @@ public class neckalace
 	
 		
 		//add apparel
-		neckalace neckalace = new neckalace("#004","Balenciaga Platform neckalace", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		neckalace neckalace = new neckalace("#505","Diamond and Blue Sapphire Halo Necklace", 
+				"New 28.9 ctw diamond, gold, and sapphire", "$45950");
 		System.out.println(neckalace);
 		
 		
