@@ -1,8 +1,12 @@
 package Linked_List;
 import UI.*;
+import model_linkedlists.Members;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import Cart.MusicalInstrument;
+import Cart.RentalAgreement;
 import Linked_List.CircleQueue;
 
 
@@ -133,6 +137,25 @@ public class Categories
 				"New 28.9 ctw diamond, gold, and sapphire", "$45950");
 	}
 	
+	public void checkIn() {
+		Cart.add(new ("Jin", 27, "Vocalist"));
+		System.out.println("Members: " + band);
+		band.add(new Members("Suga", 26, "Rapper"));
+		System.out.println("Members: " + band);
+		band.add(new Members("RM", 25, "Rapper"));
+		System.out.println("Members: " + band);
+		band.add(new Members("JHope", 25, "Rapper"));
+		System.out.println("Members: " + band);
+		band.add(new Members("Jimin", 24, "Vocalist"));
+		System.out.println("Members: " + band);
+		band.add(new Members("V", 24, "Vocalist"));
+		System.out.println("Members: " + band);
+		band.add(new Members("Jungkook", 23, "Vocalist"));
+		System.out.println("Members: " + band);
+	}
+	
+
+        
 	public void removeproducts()
 	  {
 		  	// popping data off stack with console output

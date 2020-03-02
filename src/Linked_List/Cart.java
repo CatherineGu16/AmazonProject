@@ -1,4 +1,5 @@
-package Cart;
+package Linked_List;
+
 import UI.*;
 
 public class Cart implements Cloneable {
@@ -64,9 +65,9 @@ public class Cart implements Cloneable {
 		public static String main(String[] args)
 		{
 			String total = "total";
+			System.out.println(total);
 			return total;
 		}
 		
 		
 	}
-

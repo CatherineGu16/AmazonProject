@@ -34,7 +34,7 @@ public class mainUI extends JFrame{
 	
 	public int main;
 	private JTextField txtCasInspired;
-	//private JTextField searchtext;
+	private JTextField textField;
 	private JTextField ItemCode;
 	private JTextField Quantity;
 
@@ -55,7 +55,7 @@ public class mainUI extends JFrame{
 	public void createLayout() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 646);
+		setBounds(100, 100, 800, 645);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		
@@ -78,13 +78,12 @@ public class mainUI extends JFrame{
 		panel.add(txtCasInspired);
 		txtCasInspired.setColumns(10);
 		
-		/*
-		searchtext = new JTextField();
-		searchtext.setBounds(10, 61, 469, 33);
-		panel.add(searchtext);
-		searchtext.setColumns(10);
+		textField = new JTextField();
+		textField.setBounds(10, 61, 469, 33);
+		panel.add(textField);
+		textField.setColumns(10);
 		
-		*/
+		//
 		
 		Usernames.setText("Guest");
 		Usernames.setBounds(510, 11, 120, 20);
@@ -101,7 +100,7 @@ public class mainUI extends JFrame{
 		getContentPane().add(txtpnYop);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 586, 658, 278);
+		scrollPane.setBounds(280, 100, 358, 487);
 		getContentPane().add(scrollPane);
 		
 		
@@ -114,11 +113,11 @@ public class mainUI extends JFrame{
 		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
 		MainTextBox.setText("Welcome to C.A.S. Inspired! ");
 		
-		/*
+		
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String search = searchtext.getText();
+				String search = textField.getText();
 				
 				MainTextBox.setText("Yeet");
 				
@@ -129,7 +128,7 @@ public class mainUI extends JFrame{
 		btnSearch.setBounds(465, 61, 111, 33);
 		panel.add(btnSearch);
 		
-		*/
+		//
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(635, 0, 153, 587);
@@ -145,10 +144,7 @@ public class mainUI extends JFrame{
 		scrollPane_1.setBounds(10, 215, 133, 297);
 		panel_1.add(scrollPane_1);
 		
-		JTextPane CartList = new JTextPane();
-		CartList.setText("Your Cart is Empty");
-		CartList.setEditable(false);
-		scrollPane_1.setViewportView(CartList);
+		
 		
 		ItemCode = new JTextField();
 		ItemCode.setBounds(10, 95, 96, 20);
@@ -195,9 +191,18 @@ public class mainUI extends JFrame{
 		JButton addToCart = new JButton("Add to Cart");
 		addToCart.setBounds(10, 170, 135, 15);
 		panel_1.add(addToCart);
+		addToCart.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String itemnum = Item.getText();
+				String quantity = Quantity.getText();
+				
+				
+				
+			}
+		});
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(0, 100, 638, 487);
+		scrollPane_2.setBounds(0, 100, 282, 487);
 		getContentPane().add(scrollPane_2);
 		
 		JPanel ImagePanel = new JPanel();
@@ -262,6 +267,30 @@ public class mainUI extends JFrame{
 		JTextPane tp7 = new JTextPane();
 		tp7.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		ImagePanel.add(tp7);
+		
+		JLabel image8 = new JLabel("");
+		image8.setBackground(Color.WHITE);
+		ImagePanel.add(image8);
+		
+		JTextPane tp8 = new JTextPane();
+		tp8.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp8);
+		
+		JLabel image9 = new JLabel("");
+		image9.setBackground(Color.WHITE);
+		ImagePanel.add(image9);
+		
+		JTextPane tp9 = new JTextPane();
+		tp9.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp9);
+		
+		JLabel image10 = new JLabel("");
+		image10.setBackground(Color.WHITE);
+		ImagePanel.add(image10);
+		
+		JTextPane tp10 = new JTextPane();
+		tp10.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		ImagePanel.add(tp10);
 	
 
 		
@@ -296,7 +325,12 @@ public class mainUI extends JFrame{
 						tp6.setText(Uggs.main(null));
 						image7.setIcon(new ImageIcon("src/Jeans.jpg"));
 						tp7.setText(Jeans.main(null));
-					
+						image8.setIcon(new ImageIcon(""));
+						tp8.setText("");
+						image9.setIcon(new ImageIcon(""));
+						tp9.setText("");
+						image10.setIcon(new ImageIcon(""));
+						tp10.setText("");
 						
 						}
 				});
@@ -310,18 +344,16 @@ public class mainUI extends JFrame{
 				
 				image1.setIcon(new ImageIcon("src/MapOfSoul7.jpg"));
 				tp1.setText(MapSoul7.main(null));
-				image2.setIcon(new ImageIcon("src/Persona.jpg"));
-				tp2.setText(MapSoulPersona.main(null));
-				image3.setIcon(new ImageIcon("src/Wings.jpg"));
-				tp3.setText(Wings.main(null));
-				image4.setIcon(new ImageIcon("src/Answer.jpg"));
-				tp4.setText(Answer.main(null));
-				image5.setIcon(new ImageIcon("src/Tear.jpg"));
-				tp5.setText(Tear.main(null));
-				image6.setIcon(new ImageIcon("src/DarkWild.jpg"));
-				tp6.setText(DarkWild.main(null));
-				image7.setIcon(new ImageIcon("src/NeverWalk.jpg"));
-				tp7.setText(NeverWalk.main(null));
+				image2.setIcon(new ImageIcon("src/Wings.jpg"));
+				tp2.setText(Wings.main(null));
+				image3.setIcon(new ImageIcon("src/Answer.jpg"));
+				tp3.setText(Answer.main(null));
+				image4.setIcon(new ImageIcon("src/Tear.jpg"));
+				tp4.setText(Tear.main(null));
+				image5.setIcon(new ImageIcon("src/DarkWild.jpg"));
+				tp5.setText(DarkWild.main(null));
+				image6.setIcon(new ImageIcon("src/NeverWalk.jpg"));
+				tp6.setText(NeverWalk.main(null));
 
 			}
 		});
@@ -345,8 +377,6 @@ public class mainUI extends JFrame{
 						tp5.setText(TV.main(null));
 						image6.setIcon(new ImageIcon("src/AppleWatch.jpg"));
 						tp6.setText(watch.main(null));
-						image7.setIcon(new ImageIcon(""));
-						tp7.setText("");
 					
 					}
 				});
@@ -417,8 +447,7 @@ public class mainUI extends JFrame{
 				image4.setIcon(new ImageIcon("src/pencils.jpg"));
 				tp4.setText(pencil.main(null));
 				image5.setIcon(new ImageIcon("src/VERYexpensiveRing.jpg"));
-				tp5.setText(DiamondRing.main(null));	
-
+				tp5.setText(DiamondRing.main(null));
 
 			}
 		});
