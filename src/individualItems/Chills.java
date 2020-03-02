@@ -36,8 +36,8 @@ public class Chills
 	
 		
 		//add apparel
-		Chills Chills = new Chills("#004","Balenciaga Platform Chills", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+
+		Chills Chills = new Chills("#302","\"Chills\" by Why Don't We", "Time: 2:45", "$1.29");
 		
 		System.out.println(Chills);
 		

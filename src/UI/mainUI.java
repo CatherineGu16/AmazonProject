@@ -359,18 +359,18 @@ public class mainUI extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						MainTextBox.setText(Electronics.main(null));
 						
-						image1.setIcon(new ImageIcon("src/.jpg"));
-						tp1.setText(Circles.main(null));
-						image2.setIcon(new ImageIcon("src/Wings.jpg"));
-						tp2.setText(Wings.main(null));
-						image3.setIcon(new ImageIcon("src/Answer.jpg"));
-						tp3.setText(Answer.main(null));
-						image4.setIcon(new ImageIcon("src/Tear.jpg"));
-						tp4.setText(Tear.main(null));
-						image5.setIcon(new ImageIcon("src/DarkWild.jpg"));
-						tp5.setText(DarkWild.main(null));
-						image6.setIcon(new ImageIcon("src/NeverWalk.jpg"));
-						tp6.setText(NeverWalk.main(null));
+						image1.setIcon(new ImageIcon("src/dell.jpg"));
+						tp1.setText(dell.main(null));
+						image2.setIcon(new ImageIcon("src/macbook.jpg"));
+						tp2.setText(macbook.main(null));
+						image3.setIcon(new ImageIcon("src/iPhone.jpg"));
+						tp3.setText(iPhonePro.main(null));
+						image4.setIcon(new ImageIcon("src/ipadpro.jpg"));
+						tp4.setText(iPad.main(null));
+						image5.setIcon(new ImageIcon("src/TV.jpg"));
+						tp5.setText(TV.main(null));
+						image6.setIcon(new ImageIcon("src/AppleWatch.jpg"));
+						tp6.setText(watch.main(null));
 					
 					}
 				});
@@ -381,6 +381,22 @@ public class mainUI extends JFrame{
 		mntmMusic.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(Music.main(null));
+				
+				image1.setIcon(new ImageIcon("src/Circles.jpg"));
+				tp1.setText(Circles.main(null));
+				image2.setIcon(new ImageIcon("src/Chills.jpg"));
+				tp2.setText(Chills.main(null));
+				image3.setIcon(new ImageIcon("src/PartyOver.jpg"));
+				tp3.setText(PartyOver.main(null));
+				image4.setIcon(new ImageIcon("src/WhatMakesYouBeautiful.jpg"));
+				tp4.setText(Beautiful.main(null));
+				image5.setIcon(new ImageIcon("src/LoveStory.jpg"));
+				tp5.setText(LoveStory.main(null));
+				image6.setIcon(new ImageIcon("src/ThankYouNext.jpg"));
+				tp6.setText(Thankyounext.main(null));
+				image7.setIcon(new ImageIcon("src/Memories.jpg"));
+				tp7.setText(Memories.main(null));
+
 			}
 		});
 		menuBar_1.add(mntmMusic);

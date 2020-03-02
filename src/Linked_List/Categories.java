@@ -76,6 +76,20 @@ public class Categories
 				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim, fading contrast stitching", "$25.00");
 	}
 	
+	public void addElectronics()
+	{
+    	//add Music
+		Electronics dell = new Electronics("#201","Dell-Inspiron 15.6''", "Touchscreen, Intel Core i5, 8GB Memory, color: black", "$500.00");
+		Electronics macbook = new Electronics("#202","13-inch Macbook Pro", "1.4GHz Quad-Core Processor, touchbar, touch ID, 256 GB", "$1499.00");
+		Electronics iPhonePro = new Electronics("#203","iPhone 11 Pro Max", "Triple-camera system, 256 GB, Color: Space Gray", "$1249.00");
+		Electronics iPad = new Electronics("#204","12.9 inch iPad Pro", 
+				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00");
+		Electronics TV = new Electronics("#205","50-inch Samsung Smart 4K Ultra HD TV", "2 HDMI ports, Pur Color, connect & share", "$300.00");
+		Electronics watch = new Electronics("#206","Apple Watch Series 5", 
+				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00");
+
+	}
+	
 	public void addMusic()
 	{
     	//add Music
@@ -103,20 +117,7 @@ public class Categories
 
 	}
 	
-	public void addElectronics()
-	{
-    	//add Music
-		Electronics dell = new Electronics("#201","Dell-Inspiron 15.6''", "Touchscreen, Intel Core i5, 8GB Memory, color: black", "$500.00");
-		Electronics macbook = new Electronics("#202","13-inch Macbook Pro", "1.4GHz Quad-Core Processor, touchbar, touch ID, 256 GB", "$1499.00");
-		Electronics iPhonePro = new Electronics("#203","iPhone 11 Pro Max", "Triple-camera system, 256 GB, Color: Space Gray", "$1249.00");
-		Electronics iPad = new Electronics("#204","12.9 inch iPad Pro", 
-				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00");
-		Electronics TV = new Electronics("#205","50-inch Samsung Smart 4K Ultra HD TV", "2 HDMI ports, Pur Color, connect & share", "$300.00");
-		Electronics watch = new Electronics("#206","Apple Watch Series 5", 
-				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00");
-
-	}
-	//
+	
 	public void addOther()
 	{
     	//add Music

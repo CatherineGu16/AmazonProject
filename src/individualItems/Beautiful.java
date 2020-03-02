@@ -36,8 +36,8 @@ public class Beautiful
 	
 		
 		//add apparel
-		Beautiful Beautiful = new Beautiful("#004","Balenciaga Platform Beautiful", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+
+		Beautiful Beautiful = new Beautiful("#302","\"Beautiful\" by Why Don't We", "Time: 2:45", "$1.29");
 		
 		System.out.println(Beautiful);
 		

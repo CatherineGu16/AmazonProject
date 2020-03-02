@@ -36,8 +36,8 @@ public class Memories
 	
 		
 		//add apparel
-		Memories Memories = new Memories("#004","Balenciaga Platform Memories", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+
+		Memories Memories = new Memories("#307","\"Memories\" by Maroon 5", "Time: 3:09", "$1.29");
 		
 		System.out.println(Memories);
 		
