@@ -408,30 +408,6 @@ public class mainUI extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(Snacks.main(null));
 				
-				image1.setIcon(new ImageIcon("src/Circles.jpg"));
-				tp1.setText(Circles.main(null));
-				image2.setIcon(new ImageIcon("src/Chills.jpg"));
-				tp2.setText(Chills.main(null));
-				image3.setIcon(new ImageIcon("src/PartyOver.jpg"));
-				tp3.setText(PartyOver.main(null));
-				image4.setIcon(new ImageIcon("src/WhatMakesYouBeautiful.jpg"));
-				tp4.setText(Beautiful.main(null));
-				image5.setIcon(new ImageIcon("src/LoveStory.jpg"));
-				tp5.setText(LoveStory.main(null));
-				image6.setIcon(new ImageIcon("src/ThankYouNext.jpg"));
-				tp6.setText(Thankyounext.main(null));
-				image7.setIcon(new ImageIcon("src/Memories.jpg"));
-				tp7.setText(Memories.main(null));
-			}
-		});
-		menuBar_1.add(mntmSnacks);
-		
-		//Other button
-		JMenuItem mntmOther = new JMenuItem("Other");
-		mntmOther.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				MainTextBox.setText(Other.main(null));
-				
 				image1.setIcon(new ImageIcon("src/chips.jpg"));
 				tp1.setText(chips.main(null));
 				image2.setIcon(new ImageIcon("src/cookies.jpg"));
@@ -446,6 +422,27 @@ public class mainUI extends JFrame{
 				tp6.setText(goldfish.main(null));
 				image7.setIcon(new ImageIcon("src/CronchBars.jpg"));
 				tp7.setText(bar.main(null));
+			}
+		});
+		menuBar_1.add(mntmSnacks);
+		
+		//Other button
+		JMenuItem mntmOther = new JMenuItem("Other");
+		mntmOther.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MainTextBox.setText(Other.main(null));
+				
+				image1.setIcon(new ImageIcon("src/Popsocket.jpg"));
+				tp1.setText(popsocket.main(null));
+				image2.setIcon(new ImageIcon("src/iPhoneCase.jpg"));
+				tp2.setText(iPhoneCase.main(null));
+				image3.setIcon(new ImageIcon("src/tennisballs.jpg"));
+				tp3.setText(tennisballs.main(null));
+				image4.setIcon(new ImageIcon("src/pencils.jpg"));
+				tp4.setText(pencil.main(null));
+				image5.setIcon(new ImageIcon("src/VERYexpensiveRing.jpg"));
+				tp5.setText(pencil.main(null));
+
 			}
 		});
 		menuBar_1.add(mntmOther);
