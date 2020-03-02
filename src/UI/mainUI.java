@@ -433,19 +433,19 @@ public class mainUI extends JFrame{
 				MainTextBox.setText(Other.main(null));
 				
 				image1.setIcon(new ImageIcon("src/chips.jpg"));
-				tp1.setText(Circles.main(null));
+				tp1.setText(chips.main(null));
 				image2.setIcon(new ImageIcon("src/cookies.jpg"));
-				tp2.setText(Chills.main(null));
+				tp2.setText(cookies.main(null));
 				image3.setIcon(new ImageIcon("src/hotcheetos.jpg"));
-				tp3.setText(PartyOver.main(null));
+				tp3.setText(hotcheetos.main(null));
 				image4.setIcon(new ImageIcon("src/popcorn.jpg"));
-				tp4.setText(Beautiful.main(null));
+				tp4.setText(popcorn.main(null));
 				image5.setIcon(new ImageIcon("src/gummybears.jpg"));
-				tp5.setText(gummybear.main(null));
+				tp5.setText(gummybears.main(null));
 				image6.setIcon(new ImageIcon("src/goldfish.jpg"));
-				tp6.setText(Thankyounext.main(null));
+				tp6.setText(goldfish.main(null));
 				image7.setIcon(new ImageIcon("src/CronchBars.jpg"));
-				tp7.setText(Memories.main(null));
+				tp7.setText(bar.main(null));
 			}
 		});
 		menuBar_1.add(mntmOther);
