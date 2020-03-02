@@ -391,7 +391,7 @@ public class mainUI extends JFrame{
 				image4.setIcon(new ImageIcon("src/WhatMakesYouBeautiful.jpg"));
 				tp4.setText(Beautiful.main(null));
 				image5.setIcon(new ImageIcon("src/LoveStory.jpg"));
-				tp5.setText(LoveStory.main(null));
+				tp5.setText(Lovestory.main(null));
 				image6.setIcon(new ImageIcon("src/ThankYouNext.jpg"));
 				tp6.setText(Thankyounext.main(null));
 				image7.setIcon(new ImageIcon("src/Memories.jpg"));
@@ -441,7 +441,7 @@ public class mainUI extends JFrame{
 				image4.setIcon(new ImageIcon("src/pencils.jpg"));
 				tp4.setText(pencil.main(null));
 				image5.setIcon(new ImageIcon("src/VERYexpensiveRing.jpg"));
-				tp5.setText(pencil.main(null));
+				tp5.setText(DiamondRing.main(null));
 
 			}
 		});
