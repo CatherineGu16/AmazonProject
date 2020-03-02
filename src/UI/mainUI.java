@@ -418,10 +418,7 @@ public class mainUI extends JFrame{
 				tp4.setText(pencil.main(null));
 				image5.setIcon(new ImageIcon("src/VERYexpensiveRing.jpg"));
 				tp5.setText(DiamondRing.main(null));	
-				image6.setIcon(new ImageIcon(""));
-				tp6.setText("");	
-				image7.setIcon(new ImageIcon(""));
-				tp7.setText("");
+
 
 			}
 		});
