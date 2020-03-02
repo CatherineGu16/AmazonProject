@@ -431,6 +431,21 @@ public class mainUI extends JFrame{
 		mntmOther.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainTextBox.setText(Other.main(null));
+				
+				image1.setIcon(new ImageIcon("src/chips.jpg"));
+				tp1.setText(Circles.main(null));
+				image2.setIcon(new ImageIcon("src/cookies.jpg"));
+				tp2.setText(Chills.main(null));
+				image3.setIcon(new ImageIcon("src/hotcheetos.jpg"));
+				tp3.setText(PartyOver.main(null));
+				image4.setIcon(new ImageIcon("src/popcorn.jpg"));
+				tp4.setText(Beautiful.main(null));
+				image5.setIcon(new ImageIcon("src/gummybears.jpg"));
+				tp5.setText(gummybear.main(null));
+				image6.setIcon(new ImageIcon("src/goldfish.jpg"));
+				tp6.setText(Thankyounext.main(null));
+				image7.setIcon(new ImageIcon("src/CronchBars.jpg"));
+				tp7.setText(Memories.main(null));
 			}
 		});
 		menuBar_1.add(mntmOther);
