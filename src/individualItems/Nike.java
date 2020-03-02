@@ -37,7 +37,7 @@ public class Nike
 		
 		//add apparel
 		Nike Nike = new Nike("#003","Nike Air Zoom Pegasus", 
-				"cooling perforations, breathability across high-heat areas, reduce bulk without compromising comfort, Color: thunder gray", 
+				"cooling perforations, breathability across high-heat areas,\n reduce bulk without compromising comfort, Color: thunder gray", 
 				"$120.00");
 		
 		System.out.println(Nike);

@@ -37,7 +37,7 @@ public class ParachutePants
 		
 		//add apparel
 		ParachutePants ParachutePants = new ParachutePants("#002","Parachute pants", 
-				"Gold, parachute pants with elastic wasteband, fits most tetens and adults", "$18.00");
+				"Gold, parachute pants with elastic wasteband,\n fits most tetens and adults", "$18.00");
 		
 		System.out.println(ParachutePants);
 		

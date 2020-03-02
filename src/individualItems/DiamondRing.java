@@ -36,7 +36,7 @@ public class DiamondRing
 	
 		
 		//add apparel
-		DiamondRing DiamondRing = new DiamondRing("#506","Diamond Ring", "Antique platinum ring set with an 8.88 carat diamond center & 0.70 carats surronding the diamonds", "$68,500");
+		DiamondRing DiamondRing = new DiamondRing("#506","Diamond Ring", "Antique platinum ring set\n with an 8.88 carat diamond center & 0.70\n carats surronding the diamonds", "$68,500");
 
 		System.out.println(DiamondRing);
 		

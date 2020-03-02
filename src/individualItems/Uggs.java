@@ -37,7 +37,7 @@ public class Uggs
 		
 		//add apparel
 		Uggs Uggs = new Uggs("#006","Thigh-high Uggs", 
-				"fashionable, wedge heel, 22'' shaft height, 2' heel height, water repellant", "$300.00");
+				"fashionable, wedge heel, 22'' shaft height,\n 2' heel height, water repellant", "$300.00");
 		
 		System.out.println(Uggs);
 		

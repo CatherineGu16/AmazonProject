@@ -37,7 +37,7 @@ public class Jeans
 		
 		//add apparel
 		Jeans Jeans = new Jeans("#007","Advanced Stretch Skinny Jeans", 
-				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim, fading contrast stitching", "$25.00");
+				"64% cotton 21% Modal 14% Lyocell 1% Elastane, dark wash denim,\n fading contrast stitching", "$25.00");
 
 		System.out.println(Jeans);
 		

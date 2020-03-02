@@ -37,7 +37,7 @@ public class watch
 		
 		//add apparel
 		watch watch = new watch("#206","Apple Watch Series 5", 
-				"Always-On retina display, Ultra-low power LTPO display, all-day battery life", "$400.00");
+				"Always-On retina display, Ultra-low power LTPO display,\n all-day battery life", "$400.00");
 
 		System.out.println(watch);
 		

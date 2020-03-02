@@ -37,7 +37,7 @@ public class iPad
 		
 		//add apparel
 		iPad iPad = new iPad("#204","12.9 inch iPad Pro", 
-				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00");
+				"Liquid retina display, 12-megapixel camera, true tone display,\n 256 GB, color: silver", "$1149.00");
 		System.out.println(iPad);
 		
 		

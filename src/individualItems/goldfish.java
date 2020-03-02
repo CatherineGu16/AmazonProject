@@ -37,7 +37,7 @@ public class goldfish
 		
 		//add apparel
 		goldfish goldfish = new goldfish("#406","Pepperidge Farm Xtra Cheddar Goldfish", 
-				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64");
+				"Playful cheese crackers baked with a smile,\n no artificial colors or preservatives", "3.64");
 		System.out.println(goldfish);
 		
 		

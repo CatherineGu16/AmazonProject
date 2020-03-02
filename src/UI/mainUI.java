@@ -55,7 +55,7 @@ public class mainUI extends JFrame{
 	public void createLayout() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 645);
+		setBounds(100, 100, 800, 646);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		
@@ -100,7 +100,7 @@ public class mainUI extends JFrame{
 		getContentPane().add(txtpnYop);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(280, 100, 358, 487);
+		scrollPane.setBounds(0, 586, 658, 278);
 		getContentPane().add(scrollPane);
 		
 		
@@ -196,7 +196,7 @@ public class mainUI extends JFrame{
 		panel_1.add(addToCart);
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(0, 100, 282, 487);
+		scrollPane_2.setBounds(0, 100, 638, 487);
 		getContentPane().add(scrollPane_2);
 		
 		JPanel ImagePanel = new JPanel();
@@ -261,30 +261,6 @@ public class mainUI extends JFrame{
 		JTextPane tp7 = new JTextPane();
 		tp7.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		ImagePanel.add(tp7);
-		
-		JLabel image8 = new JLabel("");
-		image8.setBackground(Color.WHITE);
-		ImagePanel.add(image8);
-		
-		JTextPane tp8 = new JTextPane();
-		tp8.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		ImagePanel.add(tp8);
-		
-		JLabel image9 = new JLabel("");
-		image9.setBackground(Color.WHITE);
-		ImagePanel.add(image9);
-		
-		JTextPane tp9 = new JTextPane();
-		tp9.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		ImagePanel.add(tp9);
-		
-		JLabel image10 = new JLabel("");
-		image10.setBackground(Color.WHITE);
-		ImagePanel.add(image10);
-		
-		JTextPane tp10 = new JTextPane();
-		tp10.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		ImagePanel.add(tp10);
 	
 
 		
@@ -319,12 +295,7 @@ public class mainUI extends JFrame{
 						tp6.setText(Uggs.main(null));
 						image7.setIcon(new ImageIcon("src/Jeans.jpg"));
 						tp7.setText(Jeans.main(null));
-						image8.setIcon(new ImageIcon(""));
-						tp8.setText("");
-						image9.setIcon(new ImageIcon(""));
-						tp9.setText("");
-						image10.setIcon(new ImageIcon(""));
-						tp10.setText("");
+					
 						
 						}
 				});
@@ -348,6 +319,8 @@ public class mainUI extends JFrame{
 				tp5.setText(DarkWild.main(null));
 				image6.setIcon(new ImageIcon("src/NeverWalk.jpg"));
 				tp6.setText(NeverWalk.main(null));
+				image7.setIcon(new ImageIcon(""));
+				tp7.setText("");
 
 			}
 		});
@@ -371,6 +344,8 @@ public class mainUI extends JFrame{
 						tp5.setText(TV.main(null));
 						image6.setIcon(new ImageIcon("src/AppleWatch.jpg"));
 						tp6.setText(watch.main(null));
+						image7.setIcon(new ImageIcon(""));
+						tp7.setText("");
 					
 					}
 				});
@@ -441,7 +416,11 @@ public class mainUI extends JFrame{
 				image4.setIcon(new ImageIcon("src/pencils.jpg"));
 				tp4.setText(pencil.main(null));
 				image5.setIcon(new ImageIcon("src/VERYexpensiveRing.jpg"));
-				tp5.setText(DiamondRing.main(null));
+				tp5.setText(DiamondRing.main(null));	
+				image6.setIcon(new ImageIcon(""));
+				tp6.setText("");	
+				image7.setIcon(new ImageIcon(""));
+				tp7.setText("");
 
 			}
 		});

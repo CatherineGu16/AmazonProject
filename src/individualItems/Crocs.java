@@ -37,7 +37,7 @@ public class Crocs
 		
 		//add apparel
 		Crocs Crocs = new Crocs("#004","Balenciaga Platform Crocs", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
+				"maximum shock absorbance, odor and water resistant,\n 15 cm platform, made in Wuhan", "$850.00");
 		
 		System.out.println(Crocs);
 		
