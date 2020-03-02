@@ -33,7 +33,7 @@ public class Beautiful
 	public static String main(String[] args)
 	{
 	
-	
+	//
 		
 		//add apparel
 
