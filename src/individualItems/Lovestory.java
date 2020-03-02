@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class popcorn
+public class Lovestory
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class popcorn
 	String description;
 	String price;
 	
-	public popcorn( String i, String n, String d, String p)
+	public Lovestory( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,11 +36,11 @@ public class popcorn
 	
 		
 		//add apparel
-		popcorn popcorn = new popcorn("#404","Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88");
-		System.out.println(popcorn);
+		Lovestory Lovestory = new Lovestory("#305","\"Love Story\" by Taylor Swift", "Time: 3:55", "$1.29");
+		System.out.println(Lovestory);
 		
 		
-		return popcorn.toString() ;
+		return Lovestory.toString() ;
 	}
 	
 	public static String delete() {

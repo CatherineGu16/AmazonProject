@@ -36,9 +36,7 @@ public class hotcheetos
 	
 		
 		//add apparel
-		hotcheetos hotcheetos = new hotcheetos("#004","Balenciaga Platform hotcheetos", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		hotcheetos hotcheetos = new hotcheetos("#403","Flamin' Hot Cheetos", "Made with real cheese", "$3.00");
 		System.out.println(hotcheetos);
 		
 		

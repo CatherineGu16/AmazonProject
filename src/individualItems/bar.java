@@ -36,9 +36,8 @@ public class bar
 	
 		
 		//add apparel
-		bar bar = new bar("#004","Balenciaga Platform bar", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		bar bar = new bar("#407","Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52");
+
 		System.out.println(bar);
 		
 		

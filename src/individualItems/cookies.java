@@ -36,9 +36,7 @@ public class cookies
 	
 		
 		//add apparel
-		cookies cookies = new cookies("#004","Balenciaga Platform cookies", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		cookies cookies = new cookies("#402","Chocolate chip cookies", "Pack of 20 cookies", "$6.00");
 		System.out.println(cookies);
 		
 		

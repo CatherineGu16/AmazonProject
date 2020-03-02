@@ -36,9 +36,8 @@ public class iPhoneCase
 	
 		
 		//add apparel
-		iPhoneCase iPhoneCase = new iPhoneCase("#004","Balenciaga Platform iPhoneCase", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		iPhoneCase iPhoneCase = new iPhoneCase("#502","Otterbox Symmetry Case", 
+				"synthetic rubber, ultra thin, raised bumper", "$45.00");
 		System.out.println(iPhoneCase);
 		
 		

@@ -32,7 +32,7 @@ public class Snacks
 		Snacks gummybears = new Snacks("#405","Haribo Gummy Bears", "5 lb, approximately 985 pieces, America's #1 selling gummy bear", "$12.79");
 		Snacks goldfish = new Snacks("#406","Pepperidge Farm Xtra Cheddar Goldfish", 
 				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64");
-		Snacks bar = new Snacks("407","Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52");
+		Snacks bar = new Snacks("#407","Nature Valley Granola Bars", "total 36 bars, made with real ingredients, wholesome snack bar", "17.52");
 
 		System.out.println(chips);
 		System.out.println(cookies);

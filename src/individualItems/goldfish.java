@@ -36,9 +36,8 @@ public class goldfish
 	
 		
 		//add apparel
-		goldfish goldfish = new goldfish("#004","Balenciaga Platform goldfish", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		goldfish goldfish = new goldfish("#406","Pepperidge Farm Xtra Cheddar Goldfish", 
+				"Playful cheese crackers baked with a smile, no artificial colors or preservatives", "3.64");
 		System.out.println(goldfish);
 		
 		

@@ -36,9 +36,8 @@ public class pencil
 	
 		
 		//add apparel
-		pencil pencil = new pencil("#004","Balenciaga Platform pencil", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		pencil pencil = new pencil("#504","Papermate Clearpoint Mechanical Pencils", 
+				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00");
 		System.out.println(pencil);
 		
 		

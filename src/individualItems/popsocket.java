@@ -36,9 +36,8 @@ public class popsocket
 	
 		
 		//add apparel
-		popsocket popsocket = new popsocket("#004","Balenciaga Platform popsocket", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		popsocket popsocket = new popsocket("#501","Pop socket", 
+				"multi-colored graphic with glossy finish, offers secure grip on phone", "$8.00");
 		System.out.println(popsocket);
 		
 		

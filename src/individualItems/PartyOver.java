@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class popcorn
+public class PartyOver
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class popcorn
 	String description;
 	String price;
 	
-	public popcorn( String i, String n, String d, String p)
+	public PartyOver( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,11 +36,11 @@ public class popcorn
 	
 		
 		//add apparel
-		popcorn popcorn = new popcorn("#404","Orville Redenbacher's Ultra Butter Microwave Popcorn", "6 packs of 3.96 oz. popcorn", "$20.88");
-		System.out.println(popcorn);
+		PartyOver PartyOver = new PartyOver("#303","\"When the Party's Over\" by Billie Eilish", "Time: 3:16", "$1.29");
+		System.out.println(PartyOver);
 		
 		
-		return popcorn.toString() ;
+		return PartyOver.toString() ;
 	}
 	
 	public static String delete() {

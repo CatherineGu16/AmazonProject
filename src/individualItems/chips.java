@@ -36,9 +36,7 @@ public class chips
 	
 		
 		//add apparel
-		chips chips = new chips("#004","Balenciaga Platform chips", 
-				"maximum shock absorbance, odor and water resistant, 15 cm platform, made in Wuhan", "$850.00");
-		
+		chips chips = new chips("#401","Catherine's chips", "Bestest chips ever, sponsored by Sravani", "$5.00");
 		System.out.println(chips);
 		
 		
