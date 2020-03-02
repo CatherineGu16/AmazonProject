@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class DiamondRing
+public class iPad
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class DiamondRing
 	String description;
 	String price;
 	
-	public DiamondRing( String i, String n, String d, String p)
+	public iPad( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,12 +36,12 @@ public class DiamondRing
 	
 		
 		//add apparel
-		DiamondRing DiamondRing = new DiamondRing("#506","Diamond Ring", "Antique platinum ring set with an 8.88 carat diamond center & 0.70 carats surronding the diamonds", "$68,500");
-
-		System.out.println(DiamondRing);
+		iPad iPad = new iPad("#204","12.9 inch iPad Pro", 
+				"Liquid retina display, 12-megapixel camera, true tone display, 256 GB, color: silver", "$1149.00");
+		System.out.println(iPad);
 		
 		
-		return DiamondRing.toString() ;
+		return iPad.toString() ;
 	}
 	
 	public static String delete() {

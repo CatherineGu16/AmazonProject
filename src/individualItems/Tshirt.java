@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class DiamondRing
+public class Tshirt
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class DiamondRing
 	String description;
 	String price;
 	
-	public DiamondRing( String i, String n, String d, String p)
+	public Tshirt( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,12 +36,13 @@ public class DiamondRing
 	
 		
 		//add apparel
-		DiamondRing DiamondRing = new DiamondRing("#506","Diamond Ring", "Antique platinum ring set with an 8.88 carat diamond center & 0.70 carats surronding the diamonds", "$68,500");
-
-		System.out.println(DiamondRing);
+		Tshirt Tshirt = new Tshirt( "#001","10 pack white T-shirts", 	
+				"10 count, white 100% cotton T-shirts, size: L", "$15.00");
+		
+		System.out.println(Tshirt);
 		
 		
-		return DiamondRing.toString() ;
+		return Tshirt.toString() ;
 	}
 	
 	public static String delete() {

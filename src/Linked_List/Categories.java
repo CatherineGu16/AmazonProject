@@ -129,8 +129,8 @@ public class Categories
 				"longest lasting tennis balls, LongPlay felt", "$80.00");
 		Other pencil = new Other("#504","Papermate Clearpoint Mechanical Pencils", 
 				"0.05 mm, convenient click, twist eraser, comfort grip", "$5.00");
-		Other DiamondRing = new Other("#506","Diamond Ring", 
-				"Antique platinum ring set with an 8.88 carat diamond center & 0.70 carats surronding the diamonds", "$68,500");
+		Other necklace = new Other("#505","Diamond and Blue Sapphire Halo Necklace", 
+				"New 28.9 ctw diamond, gold, and sapphire", "$45950");
 	}
 	
 	public void removeproducts()

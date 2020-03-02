@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import UI.*;
-public class DiamondRing
+public class NeverWalk
 {
 	//make objects
 	
@@ -15,7 +15,7 @@ public class DiamondRing
 	String description;
 	String price;
 	
-	public DiamondRing( String i, String n, String d, String p)
+	public NeverWalk( String i, String n, String d, String p)
 	{	
 
 		this.item = i;
@@ -36,12 +36,12 @@ public class DiamondRing
 	
 		
 		//add apparel
-		DiamondRing DiamondRing = new DiamondRing("#506","Diamond Ring", "Antique platinum ring set with an 8.88 carat diamond center & 0.70 carats surronding the diamonds", "$68,500");
-
-		System.out.println(DiamondRing);
+		NeverWalk NeverWalk = new NeverWalk("#107","You Never Walk Alone", 
+				"1 CD, photobook, photocard, poster", "$23.00");
+		System.out.println(NeverWalk);
 		
 		
-		return DiamondRing.toString() ;
+		return NeverWalk.toString() ;
 	}
 	
 	public static String delete() {

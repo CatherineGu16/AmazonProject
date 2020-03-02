@@ -2,6 +2,7 @@
  * TCSS 305 Autumn 2011 Assignment 1 - Shopping Cart
  * Author: Daniel M. Zimmerman (Formatting and Comments) and Marty Stepp
  */
+package Cart;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
