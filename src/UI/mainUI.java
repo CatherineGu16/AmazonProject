@@ -34,7 +34,7 @@ public class mainUI extends JFrame{
 	
 	public int main;
 	private JTextField txtCasInspired;
-	private JTextField searchtext;
+	//private JTextField searchtext;
 	private JTextField ItemCode;
 	private JTextField Quantity;
 
@@ -78,12 +78,13 @@ public class mainUI extends JFrame{
 		panel.add(txtCasInspired);
 		txtCasInspired.setColumns(10);
 		
+		/*
 		searchtext = new JTextField();
 		searchtext.setBounds(10, 61, 469, 33);
 		panel.add(searchtext);
 		searchtext.setColumns(10);
 		
-		//
+		*/
 		
 		Usernames.setText("Guest");
 		Usernames.setBounds(510, 11, 120, 20);
@@ -113,7 +114,7 @@ public class mainUI extends JFrame{
 		MainTextBox.setFont(new Font("Georgia", Font.PLAIN, 20));
 		MainTextBox.setText("Welcome to C.A.S. Inspired! ");
 		
-		
+		/*
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -128,7 +129,7 @@ public class mainUI extends JFrame{
 		btnSearch.setBounds(465, 61, 111, 33);
 		panel.add(btnSearch);
 		
-		//
+		*/
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(635, 0, 153, 587);
@@ -309,18 +310,18 @@ public class mainUI extends JFrame{
 				
 				image1.setIcon(new ImageIcon("src/MapOfSoul7.jpg"));
 				tp1.setText(MapSoul7.main(null));
-				image2.setIcon(new ImageIcon("src/Wings.jpg"));
-				tp2.setText(Wings.main(null));
-				image3.setIcon(new ImageIcon("src/Answer.jpg"));
-				tp3.setText(Answer.main(null));
-				image4.setIcon(new ImageIcon("src/Tear.jpg"));
-				tp4.setText(Tear.main(null));
-				image5.setIcon(new ImageIcon("src/DarkWild.jpg"));
-				tp5.setText(DarkWild.main(null));
-				image6.setIcon(new ImageIcon("src/NeverWalk.jpg"));
-				tp6.setText(NeverWalk.main(null));
-				image7.setIcon(new ImageIcon(""));
-				tp7.setText("");
+				image2.setIcon(new ImageIcon("src/Persona.jpg"));
+				tp2.setText(MapSoulPersona.main(null));
+				image3.setIcon(new ImageIcon("src/Wings.jpg"));
+				tp3.setText(Wings.main(null));
+				image4.setIcon(new ImageIcon("src/Answer.jpg"));
+				tp4.setText(Answer.main(null));
+				image5.setIcon(new ImageIcon("src/Tear.jpg"));
+				tp5.setText(Tear.main(null));
+				image6.setIcon(new ImageIcon("src/DarkWild.jpg"));
+				tp6.setText(DarkWild.main(null));
+				image7.setIcon(new ImageIcon("src/NeverWalk.jpg"));
+				tp7.setText(NeverWalk.main(null));
 
 			}
 		});
