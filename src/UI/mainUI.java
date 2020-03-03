@@ -1,4 +1,6 @@
 package UI;
+import Cart.*;
+
 import individualItems.*;
 import java.awt.Color;
 import java.awt.Container;
@@ -35,8 +37,6 @@ public class mainUI extends JFrame{
 	public int main;
 	private JTextField txtCasInspired;
 	private JTextField textField;
-	private JTextField ItemCode;
-	private JTextField Quantity;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -55,7 +55,7 @@ public class mainUI extends JFrame{
 	public void createLayout() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 645);
+		setBounds(100, 100, 786, 634);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		
@@ -100,7 +100,7 @@ public class mainUI extends JFrame{
 		getContentPane().add(txtpnYop);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(280, 100, 358, 487);
+		scrollPane.setBounds(0, 588, 788, 241);
 		getContentPane().add(scrollPane);
 		
 		
@@ -140,35 +140,14 @@ public class mainUI extends JFrame{
 		btnCheckout.setBounds(10, 523, 133, 23);
 		panel_1.add(btnCheckout);
 		
+		
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setBounds(10, 215, 133, 297);
 		panel_1.add(scrollPane_1);
 		
-		
-		
-		ItemCode = new JTextField();
-		ItemCode.setBounds(10, 95, 96, 20);
-		panel_1.add(ItemCode);
-		ItemCode.setColumns(10);
-		
-		Quantity = new JTextField();
-		Quantity.setColumns(10);
-		Quantity.setBounds(10, 148, 96, 20);
-		panel_1.add(Quantity);
-		
 		JButton btnLogin = new JButton("Login ");
 		btnLogin.setBounds(54, 0, 89, 20);
 		panel_1.add(btnLogin);
-		
-		JLabel lblNewLabel = new JLabel("Item #");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel.setBounds(10, 70, 96, 20);
-		panel_1.add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("Quantity");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1.setBounds(10, 116, 77, 30);
-		panel_1.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Cart");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 25));
@@ -178,12 +157,13 @@ public class mainUI extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 			new loginUI().setVisible(true);
 		
-				
+				//
 			}
 		});
 		btnCheckout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new ShoppingCartUI().setVisible(true);
+				ShoppingCartRun.main(null);
 			}
 		});
 		
@@ -193,16 +173,14 @@ public class mainUI extends JFrame{
 		panel_1.add(addToCart);
 		addToCart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String itemnum = Item.getText();
-				String quantity = Quantity.getText();
-				
+
 				
 				
 			}
 		});
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(0, 100, 282, 487);
+		scrollPane_2.setBounds(0, 100, 638, 487);
 		getContentPane().add(scrollPane_2);
 		
 		JPanel ImagePanel = new JPanel();

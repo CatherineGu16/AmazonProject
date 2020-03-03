@@ -75,7 +75,7 @@ public class ShoppingCartUI extends JFrame{
 		});
 		textField.setFont(new Font("Lucida Grande", Font.PLAIN, 35));
 		textField.setEditable(false);
-		textField.setText("$200.00");
+		textField.setText("$0.00");
 		textField.setForeground(new Color(255, 255, 255));
 		textField.setBackground(new Color(30, 144, 255));
 		textField.setBounds(102, 6, 175, 52);
