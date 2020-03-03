@@ -1,41 +1,107 @@
 package Cart;
 
-public class Item 
+import java.text.NumberFormat;
+
+
+
+public class Item
+
 {
 
-	private String iName;
-	private double cost;
+    private String name;
 
-	public Item(String iName, double cost) 
-	{
+    private double price;
 
-		setItem(iName, cost);
-	}
+    private int quantity;
 
-	public void setItem(String iName, double cost) 
-	{
-		this.setiName(iName);
-		this.setcost(cost);
-	}
+ 
 
-	public String getiName() 
-	{
-		return iName;
-	}
+    // -------------------------------------------------------
 
-	public void setiName(String iName)
-	{
-		this.iName = iName;
-	}
+    //  Create a new item with the given attributes.
 
-	public double getcost() 
-	{
-		return cost;
-	}
+    // -------------------------------------------------------
 
-	public void setcost(double cost) 
-	{
-		this.cost = cost;
-	}
+    public Item (String itemName, double itemPrice, int numPurchased)
 
-}
+    {
+
+      name = itemName;
+
+      price = itemPrice;
+
+      quantity = numPurchased;
+
+    }
+
+ 
+
+    // -------------------------------------------------------
+
+    //   Return a string with the information about the item
+
+    // -------------------------------------------------------
+
+    public String toString ()
+
+    {
+
+      NumberFormat fmt = NumberFormat.getCurrencyInstance();
+
+ 
+
+      return (name + "\t" + fmt.format(price) + "\t" + quantity + "\t"
+
+            + fmt.format(price*quantity));
+
+    }
+
+ 
+
+    // -------------------------------------------------
+
+    //   Returns the unit price of the item
+
+    // -------------------------------------------------
+
+    public double getPrice()
+
+    {
+
+      return price;
+
+    }
+
+ 
+
+    // -------------------------------------------------
+
+    //   Returns the name of the item
+
+    // -------------------------------------------------
+
+    public String getName()
+
+    {
+
+      return name;
+
+    }
+
+ 
+
+    // -------------------------------------------------
+
+    //   Returns the quantity of the item
+
+    // -------------------------------------------------
+
+    public int getQuantity()
+
+    {
+
+      return quantity;
+
+    }
+
+} 
