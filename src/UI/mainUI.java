@@ -21,6 +21,10 @@ import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
+
+import Cart.Item;
+import Cart.ShoppingCartRun;
+
 import javax.swing.JScrollBar;
 import Search.*;
 import java.awt.GridLayout;
@@ -193,8 +197,9 @@ public class mainUI extends JFrame{
 		panel_1.add(addToCart);
 		addToCart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String itemnum = Item.getText();
-				String quantity = Quantity.getText();
+				ShoppingCartRun.main(null);
+				//String itemnum = Item.getText();
+				//String quantity = Quantity.getText();
 				
 				
 				

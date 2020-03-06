@@ -2,21 +2,27 @@
 package Cart;
 
 import java.util.*;
+import Cart.InitialCart;
 
-public class ShoppingCartRun {
+public class ShoppingCartRun extends InitialCart {
+	
 	public static void main(String[] args) {
 		boolean end = false;
 		System.out.println("Welcome to C.A.S.!");
-		ShoppingCartRun mycart = new ShoppingCartRun();
+		ShoppingCartRun cart = new ShoppingCartRun();
+		InitialCart contents = new InitialCart();
+		contents.toString();
+		
 		Scanner inp = new Scanner(System.in);
 		do {
 			System.out.print("\n(S) Get which item? > ");
-			String a = inp.next();
+			String a= inp.next();
 			System.out.print("\n(D) How much is it? > ");
 			double b = inp.nextInt();
-			System.out.print("\n(I) How many? > ");
-			int c = inp.nextInt();
-			mycart.addToCart(a, b, c);
+			cart.addToCart(a, b);
+			
+			//call initial cart
+			
 
 			System.out.print("\n(Y/N) Get another item? > ");
 			String d = inp.next();
@@ -26,14 +32,13 @@ public class ShoppingCartRun {
 				break;
 			case "n":
 				end = true;
+				System.out.println(contents);
+
 				break;
 			default:
 			}
 		} while (!end);
 	}
 
-	private void addToCart(String a, double b, int c) {
-		// TODO Auto-generated method stub
 
-	}
 }

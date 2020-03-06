@@ -2,106 +2,62 @@ package Cart;
 
 import java.text.NumberFormat;
 
-
-
 public class Item
-
 {
 
-    private String name;
+	private static String name;
 
-    private double price;
+	private static double price;
 
-    private int quantity;
 
- 
+	// -------------------------------------------------------
 
-    // -------------------------------------------------------
+	// Create a new item with the given attributes.
 
-    //  Create a new item with the given attributes.
+	// -------------------------------------------------------
 
-    // -------------------------------------------------------
+	public Item(String itemName, double itemPrice)
+	{
+		name = itemName;
+		price = itemPrice;
+	}
 
-    public Item (String itemName, double itemPrice, int numPurchased)
+	// -------------------------------------------------------
 
-    {
+	// Return a string with the information about the item
 
-      name = itemName;
+	// -------------------------------------------------------
 
-      price = itemPrice;
+	public String toString()
 
-      quantity = numPurchased;
+	{
 
-    }
+		NumberFormat fmt = NumberFormat.getCurrencyInstance();
 
- 
+		return (name + "\t" + fmt.format(price) + "\t"
 
-    // -------------------------------------------------------
+				+ fmt.format(price));
+	}
 
-    //   Return a string with the information about the item
+	// -------------------------------------------------
+	// Returns the unit price of the item
+	// -------------------------------------------------
 
-    // -------------------------------------------------------
+	public static double returnPrice() {
+		return price;
+	}
 
-    public String toString ()
+	// -------------------------------------------------
+	// Returns the name of the item
 
-    {
+	// -------------------------------------------------
 
-      NumberFormat fmt = NumberFormat.getCurrencyInstance();
+	public static String getName() {
+		return name;
+	}
 
- 
+	// -------------------------------------------------
+	// Returns the quantity of the item
+	// -------------------------------------------------
 
-      return (name + "\t" + fmt.format(price) + "\t" + quantity + "\t"
-
-            + fmt.format(price*quantity));
-
-    }
-
- 
-
-    // -------------------------------------------------
-
-    //   Returns the unit price of the item
-
-    // -------------------------------------------------
-
-    public double getPrice()
-
-    {
-
-      return price;
-
-    }
-
- 
-
-    // -------------------------------------------------
-
-    //   Returns the name of the item
-
-    // -------------------------------------------------
-
-    public String getName()
-
-    {
-
-      return name;
-
-    }
-
- 
-
-    // -------------------------------------------------
-
-    //   Returns the quantity of the item
-
-    // -------------------------------------------------
-
-    public int getQuantity()
-
-    {
-
-      return quantity;
-
-    }
-
-} 
+}
